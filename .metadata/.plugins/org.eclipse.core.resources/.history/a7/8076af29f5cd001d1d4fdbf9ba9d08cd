@@ -1,0 +1,5 @@
+package chap18_enum.eunms;
+
+public enum Season {
+
+}

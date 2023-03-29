@@ -1,0 +1,11 @@
+package chap16_collectionFramework;
+
+public class _02_arrayListWithType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//타입을 지정한 ArrayList 선언
+		ArrayList<String>
+	}
+
+}

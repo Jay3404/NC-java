@@ -1,0 +1,23 @@
+package chap15_usefulClass;
+
+public class _11_Integer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Integer 생성자 자바 9버전부터는 사용불가
+		Integer num1 = Integer.valueOf(100);
+		Integer num2 = Integer.valueOf(100);
+		
+		System.out.println(num1 == num2);
+		System.out.println(num1.equals(num2));
+		System.out.println(num1.compareTo(num2));
+		
+		
+		String numStr = "1000";
+		int convertNum = Integer.parseInt(numStr);
+		System.out.println(convertNum);
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package chap17_generic;
+
+public class _02_genericMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] strArr = {"java", "javascript", "html"};
+		
+		int[] intArr = {1, 2, 3, 4, 5};
+		
+		String result1 = getLastEle(strArr);
+		
+		System.out.println("strArr의 마지막 요소는 " + result1);
+	}
+	
+	
+	public static <T> T getLastEle(T[] tArr) {
+		return tArr[tArr.length - 1];
+		
+		
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+1. key와 value 모두 Number를 상속받은 클래스의 타입을 가지고 key, value의 곱이 가장 큰
+    Entry를 리턴하는 메소드 getMaxMul을 구현하세요.
+
+2. Map을 매개변수로 받아서 key는 정순 출력, value는 역순 출력하는 printKVDesc라는 제네릭 메소드를
+   구현하세요. 1 : 5
+		  2 : 4
+              3 : 3
+
+3.  T 배열을 받아서 합, 차, 곱셈, 나눗셈을 연산해주는 Calculator 제네릭 클래스를 구현하세요.
+    각 메소드는 double로 리턴하고 add, sub, mul, div로 메소드명을 갖습니다.
+    (Math.round()로 소수점 두자리까지만 표출)

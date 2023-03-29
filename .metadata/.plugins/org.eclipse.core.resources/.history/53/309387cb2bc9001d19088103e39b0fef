@@ -1,0 +1,10 @@
+package chap15_usefulClass;
+
+public class _10_MathEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

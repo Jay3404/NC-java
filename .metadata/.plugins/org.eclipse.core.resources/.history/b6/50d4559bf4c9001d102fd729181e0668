@@ -1,0 +1,10 @@
+package practice.studentProgram.pages;
+
+import java.util.Scanner;
+
+public interface PageInput {
+    default String input(){
+        Scanner sc = new Scanner(System.in);
+        return sc.next();
+    }
+}

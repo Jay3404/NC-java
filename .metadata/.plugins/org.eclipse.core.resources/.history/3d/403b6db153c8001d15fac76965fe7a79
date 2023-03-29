@@ -1,0 +1,10 @@
+package chap13_objectarray;
+
+public class _01_objectArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

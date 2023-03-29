@@ -1,0 +1,19 @@
+1. Map<String, String> memberMap(key는 이름, value는 역할) 멤버변수로 가지고
+    Group(Map<String, String> map) 생성자로 memberMap에 저장하며 getter/setter와
+    해당 group의 조장을 Entry<String, String>형태로 리턴하는 getCaptin메소드를
+    가지는 클래스 Group을 구현
+    
+2. Group을 상속받은 GroupA~F까지 만들고 각각 기본생성자에서 부모의 생성자를 호출하여
+    memberMap에 정보를 저장하는 클래스를 구현
+     기본생성자() {
+	Map<String, String> map = new HashMap<String, String>();
+	map.put(이름1, 역할1);
+         .....
+	super(map);
+    }
+
+
+3. StudyGroup<T>라는 제네릭클래스를 만들고 List<T>으로 6개의 조를 모두 가지는
+    리스트를 멤버변수로 가지고 getter/setter 만들고 List<Entry<String, String>> 
+   형태로 각 조의 조장의 정보(이름, 역할)를 리턴하는 메소드 getCaptins를 구현하세요.
+   (Group)T <= 이런식의 형변환이 가능합니다.

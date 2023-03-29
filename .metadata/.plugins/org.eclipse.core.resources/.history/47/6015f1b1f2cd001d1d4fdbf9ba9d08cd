@@ -1,0 +1,17 @@
+package chap18_enum;
+
+import chap18_enum.eunms.RGB;
+
+public class _04_useOfRGB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RGB red = RGB.RED;
+		RGB green = RGB.valueOf("GREEN");
+		RGB blue = Enum.valueOf(
+							RGB.class, "BLUE");
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+1. 20개 배열을 선언하세요
+    20개의 값을 난수를 이용해서 0 ~ 100까지의 값으로 채워넣고
+    먼저 인덱스의 홀수번째는 앞에서부터 출력하고
+    짝수번째는 뒤에서부터 출력하세요
+
+2. 클래스 PhoneInfo
+   String[] name = new String[100];
+   String[] phoneNum = new String[100];
+
+   int i = 0;
+
+   public void insertPhoneInfo(String name, String number) {
+	//이름과 번호를 배열에 저장
+   }
+
+   //모든 PhoneInfo 출력
+   public void printAllPhoneInfo() {
+
+   }
+
+   //번호에 해당하는 이름과 번호 출력
+    public void printPhoneInfo(int index) {
+
+   }

@@ -1,0 +1,10 @@
+package chap17_generic;
+
+public class _02_genericMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

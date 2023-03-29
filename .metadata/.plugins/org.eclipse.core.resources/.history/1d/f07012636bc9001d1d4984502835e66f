@@ -1,0 +1,16 @@
+package chap98_homework.HW8_20230323;
+
+public class Middle2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "유용한 클래스는 많다. 다양한 라이브러리를 활용한다.";
+		
+		StringBuffer sb = new StringBuffer(str1);
+		sb.reverse();
+		
+		System.out.println(sb);
+		
+	}
+
+}

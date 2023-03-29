@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="chap06_class.animal.bird"/>
+    <fullyQualifiedTypeName name="chap06_class.phone.PhoneInfo"/>
+    <fullyQualifiedTypeName name="chap07_inherit.car.Car"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Laserprint"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Printer"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Inkprint"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Calc"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Add"/>
+    <fullyQualifiedTypeName name="chap98_homework.nc230320.mammal.Mammal"/>
+    <fullyQualifiedTypeName name="chap99_etc.device.LgTv"/>
+    <fullyQualifiedTypeName name="chap09_polymorphism.product.SamsungTv"/>
+    <fullyQualifiedTypeName name="chap99_etc.device.SamsungTv"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass._02_instanceOfNestedClass.Outer.Mul"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.NestedClass.Mul"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.NestedClass.Div"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.NestedClass.Sub"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.NestedClass.Add"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.Calc"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator.Add"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator.Mul"/>
+    <fullyQualifiedTypeName name="chap15_usefulClass._01_object"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.Car"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="chap06_class.car.Car"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="chap98_homework.nc230316.PhoneInfo"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,14 @@
+package chap18_enum.eunms;
+
+public class _01_useOfEnum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CusMonth c = CusMonth.JAN;
+		
+		
+		
+		System.out.println(c.getMonth());
+	}
+
+}

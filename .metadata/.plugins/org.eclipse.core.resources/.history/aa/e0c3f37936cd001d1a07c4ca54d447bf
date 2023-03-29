@@ -1,0 +1,24 @@
+package chap17_generic;
+
+public class _04_genericEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	//Number상속 받는 T
+	//리턴타입 List<T> getEven(List<T> list)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,16 @@
+package chap98_homework.HW9_20230324;
+
+import java.util.Calendar;
+
+public class Basic1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calendar cal = Calendar.getInstance();
+		cal.set(2020, 4, 8);
+		
+		System.out.println(cal.get(Calendar.year));
+
+	}
+
+}

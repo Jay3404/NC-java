@@ -1,0 +1,33 @@
+package chap98_homework.HW7_20230322;
+
+import java.util.Scanner;
+
+public class Middle2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("문자열을 입력해주세요.");
+		
+		String str1 = sc.nextLine();
+		
+		char a = 'a';
+		
+		//97~122
+		for(int i = 97; i < 123; i++) {
+			if ( str1.indexOf((char)i) != str1.lastIndexOf((char)i)) {
+				str1 = str1.replace(Character.toString((char)i), "");
+				i--;
+			}
+		}for(int i = )
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

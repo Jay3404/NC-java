@@ -1,0 +1,10 @@
+package chap18_enum;
+
+public class _03_useOfEnumValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

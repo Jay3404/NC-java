@@ -1,0 +1,10 @@
+package chap14_exception;
+
+public class _02_generateException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
