@@ -8,6 +8,7 @@ public class _00_test {
 		
 		System.out.println("2차 테스트");
 		
+		
 	}
 
 }

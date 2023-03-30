@@ -25,7 +25,7 @@ public class _03_useOfEnumValue {
 		//enum 객체 배열
 		ValueMonth[] vmArr = ValueMonth.values();
 		for(ValueMonth v : vmArr) {
-			System.out.println(v.name() + "은 " + v.ordinal() + "인덱스에 있습니다.");
+			System.out.println(v.name() + "은 " + v.getMonthVal() + "인덱스에 있습니다.");
 		}
 		
 		
