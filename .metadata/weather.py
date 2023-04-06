@@ -17,5 +17,4 @@ print('Highest temperature:', data['main']['temp_max'])
 print('Humidity:', data['main']['humidity'])
 print('Pressure:', data['main']['pressure'])
 print('Weather:', data['weather'][0]['description'])
-
 print(1000000*(1.12)**10)

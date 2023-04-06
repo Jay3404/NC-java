@@ -10,7 +10,7 @@ public class _01_innerStaticNestedClass {
 		//상수라서 static 지정 가능
 		final static int num2 = 300;
 		
-		static int result1 = num1 + num2;
+//		static int result1 = num1 + num2;
 	}
 	
 	//정적 중첩 클래스 선언

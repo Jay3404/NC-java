@@ -1,0 +1,5 @@
+package chap98_homework.HW_20230405.clazz;
+
+public interface CardVali {
+
+}

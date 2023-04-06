@@ -1,0 +1,27 @@
+package chap20_lambda;
+
+import chap20_lambda.clazz.CompareStr;
+import chap20_lambda.clazz.Comparing;
+
+public class _07_compareStr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Comparing cp = new Comparing();
+		
+		action(cp :: comparingstr);
+		
+		
+	}
+
+	
+	
+	public static void action(CompareStr cs) {
+		String result = cs.compareTwoStr("naver", "bit");
+		
+		System.out.println(result + "입니다.");
+	}
+	
+	
+}

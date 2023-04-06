@@ -1,0 +1,5 @@
+package chap20_lambda;
+
+public interface Calculator {
+
+}

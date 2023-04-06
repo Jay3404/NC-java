@@ -13,9 +13,9 @@ public class _01_interface {
 		
 		bd.build();
 		bd.turnOnAircon();
-		int price = bd.getParkingPrice(120);
-		System.out.println("총 주차비는 " + price +
-				"원입니다.");
+//		int price = bd.getParkingPrice(120);
+//		System.out.println("총 주차비는 " + price +
+//				"원입니다.");
 	}
 
 }

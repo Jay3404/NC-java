@@ -1,0 +1,42 @@
+package chap19_multithread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class _16_threadPool {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExecutorService es = Executors.newFixedThreadPool(2);
+		
+		
+		for(int i = 0; i < 10; i++) {
+			es.execute(new PrintThread("스레드 " + i));
+			
+			if(i == 9) {
+				es.shutdownNow();
+				break;
+			}
+		}
+	}
+
+}
+
+class PrintThread extends Thread {
+	private String tName;
+	
+	public PrintThread(String tName) {
+		this.tName = tName;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(tName + " 작업 진행");
+		
+		try {
+			Thread.sleep(1000);
+		} catch(InterruptedException ie) {
+			System.out.println(tName + " shutdownNow() 호출");
+		}
+	}
+}

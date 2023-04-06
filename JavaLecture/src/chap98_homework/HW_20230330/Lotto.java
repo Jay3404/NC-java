@@ -16,10 +16,9 @@ public class Lotto {
 	}
 
 	static void start() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("구입금액을 입력해 주세요.");
 		
-		int getMoney = sc.nextInt();
+		inputMoney();
+		
 		
 		
 		
@@ -47,12 +46,6 @@ public class Lotto {
 				chooseNums[i] = chooseNum;
 			}
 		}
-		
-		for(int i = 0; i < chooseNums.length; i++) {
-			System.out.println(chooseNums[i]);
-			
-		}
-		
 	}
 	
 	
@@ -63,21 +56,34 @@ public class Lotto {
 		while(chooseNums[i] != 0) {
 			if(chooseNums[i] == chooseNum) {
 				return result = true;
-			}
-			i++;
-		}
-		return result;
+			}i++;
+		}return result;
 	}
 	
-	static boolean checkMoney() {
-		return true;
+	static int inputMoney() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("구입금액을 입력해 주세요.");
+		
+		int result = 0;
+		while(true) {
+			int num = sc.nextInt();
+			if((num / 1000 == 0) || (num % 1000 != 0) ) {
+				System.out.println("[ERROR] 구입 금액은 천원 이상으로 천원 단위로 입력해야합니다.");
+				System.out.println("구입금액을 다시 입력해 주세요.");
+				
+			}else if(num % 1000 == 0) {
+				result = num / 1000;
+				break;
+			}
+		}
+		return result;
 	}
 	
 	static void inputAnswerNum() {
 		
 	}
 	
-	static void checkNum() {
+	static void compareNum() {
 		
 	}
 	

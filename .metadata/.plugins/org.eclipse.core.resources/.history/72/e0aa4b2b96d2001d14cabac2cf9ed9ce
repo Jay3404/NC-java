@@ -1,0 +1,17 @@
+package chap19_multithread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class _15_threadPool {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//스레드 풀 생성
+		ExecutorService es = 
+				Executors.newFixedThreadPool(5);
+		
+		
+	}
+
+}

@@ -1,0 +1,48 @@
+package chap21_stream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import chap21_stream.clazz.CreditCard;
+
+public class _04_pipeLineEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<CreditCard> cardList = 
+					new ArrayList<CreditCard>();
+		
+		/*
+		 * 카카오, 라이언카드, 1000
+		 * 삼성카드, 탭탭카드, 2000
+		 * 신한카드, 드림카드, 3000
+		 * 삼성카드, ID카드, 5000
+		 * 현대카드, 더블랙, 100000
+		 * 아멕스, 블랙카드, 300000
+		 */
+		// 스트림으로 한도가 5000이상인 카드의 회사와 카드이름 출력
+		
+		
+		cardList.add(new CreditCard("카카오", "라이언카드", 1000));
+		cardList.add(new CreditCard("삼성카드", "탭탭카드", 2000));
+		cardList.add(new CreditCard("신한카드", "드림카드", 3000));
+		cardList.add(new CreditCard("삼성카드", "ID카드", 5000));
+		cardList.add(new CreditCard("현대카드", "더블랙", 100000));
+		cardList.add(new CreditCard("아멕스", "블랙카드", 300000));
+		
+		System.out.println(cardList.stream()
+				.filter(cCard -> cCard.getLimitMoney() >= 5000)
+				.Arrays.toString
+				
+				
+				
+				
+				
+				
+				);
+		
+		
+		
+	}
+
+}

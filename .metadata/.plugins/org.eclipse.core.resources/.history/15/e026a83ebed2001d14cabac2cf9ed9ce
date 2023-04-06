@@ -1,0 +1,6 @@
+package chap20_lambda.clazz;
+
+@FunctionalInterface
+public interface CompareStr {
+	String compareTwoStr(String a, String b);
+}

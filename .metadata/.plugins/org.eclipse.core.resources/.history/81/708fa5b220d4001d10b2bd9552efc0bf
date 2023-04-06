@@ -1,0 +1,17 @@
+package chap19_multithread;
+
+public class _17_threadEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BaoardDAO boardDAO = new BoardDAO();
+		
+		Thread thread = new Thread() {
+			@Override
+			public void run() {
+				boardDAO.selectBoardList();
+			}
+		};
+	}
+
+}

@@ -1,0 +1,36 @@
+package chap98_homework.HW_20230330._2;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("--------------------배열--------------------");
+		first(sc);
+		
+	}
+	
+	
+	static void first (Scanner sc) {
+		
+		
+		while(sc.next().charAt(0) != 'q'){
+			
+			
+			
+		}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

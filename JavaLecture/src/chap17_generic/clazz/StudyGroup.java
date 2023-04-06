@@ -22,7 +22,7 @@ public class StudyGroup<T> {
 		return capList;
 	}
 	
-	public List<String> getMembers() {
-		
-	}
+//	public List<String> getMembers() {
+//		
+//	}
 }

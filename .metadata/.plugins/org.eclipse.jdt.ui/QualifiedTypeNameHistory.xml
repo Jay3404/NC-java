@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="chap06_class.animal.bird"/>
     <fullyQualifiedTypeName name="chap06_class.phone.PhoneInfo"/>
     <fullyQualifiedTypeName name="chap07_inherit.car.Car"/>
@@ -22,10 +21,8 @@
     <fullyQualifiedTypeName name="chap12_nestedclass.NestedClass.Add"/>
     <fullyQualifiedTypeName name="chap12_nestedclass.clazz.Calc"/>
     <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator.Add"/>
     <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator.Mul"/>
     <fullyQualifiedTypeName name="chap15_usefulClass._01_object"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
@@ -40,4 +37,25 @@
     <fullyQualifiedTypeName name="chap98_homework.nc230316.PhoneInfo"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW_20230403.ElseIfCla"/>
+    <fullyQualifiedTypeName name="chap19_multithread.clazz.SumThread1"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executor"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.Calculator"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW6_20230321.Middle.Calculator.Add"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.Add"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.CustomString"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.MoneyConvertor"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.UpperCaseInter"/>
+    <fullyQualifiedTypeName name="chap20_lambda.clazz.CompareStr"/>
+    <fullyQualifiedTypeName name="chap21_stream.clazz.HyundaiCar"/>
+    <fullyQualifiedTypeName name="chap98_homework.HW_20230405.clazz.Card"/>
+    <fullyQualifiedTypeName name="chap19_multithread._08_NonSyncShareObj"/>
 </qualifiedTypeNameHistroy>

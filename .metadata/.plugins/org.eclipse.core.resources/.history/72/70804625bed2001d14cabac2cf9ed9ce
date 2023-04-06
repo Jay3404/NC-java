@@ -1,0 +1,5 @@
+package chap20_lambda.clazz;
+
+public interface CompareStr {
+	boolean compareTwoStr(String a, String b);
+}

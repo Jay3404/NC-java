@@ -1,0 +1,40 @@
+package chap98_homework.HW_20230405;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import chap98_homework.HW_20230405.clazz.Card;
+
+public class HW0405 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Card> card = new ArrayList<Card>();
+		
+		card.add(new Card("a", 3));
+		card.add(new Card("b", 1));
+		card.add(new Card("c", 0));
+		card.add(new Card("d", 1));
+		card.add(new Card("e", 2));
+		card.add(new Card("f", 5));
+		
+		Stream<Card> filterstream =	
+				card.stream()
+				.filter(c -> c.getValidYear() <= 1);
+		
+		card.stream()
+				.filter(c -> c.getValidYear() <= 1)
+				.map(c -> {
+					c.setValidYear(c.getValidYear() + 3);
+					return c;})
+				.forEach(c -> System.out.println(c.getCardName()));
+	
+				
+		
+		
+		
+		
+	}
+
+}

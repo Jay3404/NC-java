@@ -1,0 +1,45 @@
+package chap98_homework.HW_20230330._2;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("--------------------배열--------------------");
+		first(sc);
+		
+	}
+	
+	
+	static void first (Scanner sc) {
+		
+		String inputNum = "1";
+		int i = 0;
+		int[] intArr = new int[100];
+		
+		while(true){
+			System.out.println("숫자를 입력해주세요.");
+			inputNum = sc.next();
+			if(inputNum.charAt(0) != 'q') {
+				intArr[i] = Integer.valueOf(inputNum);
+				i++;
+			}else if(inputNum.charAt(0) == 'q') {
+				break;
+			}
+		}
+		System.out.println(intArr.toString());
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

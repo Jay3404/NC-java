@@ -1,0 +1,5 @@
+package chap20_lambda.clazz;
+
+public class Operator {
+	public static void operation(int a, int b, char op);
+}

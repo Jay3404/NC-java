@@ -1,0 +1,27 @@
+package chap20_lambda;
+
+import chap20_lambda.clazz.Calculator;
+
+public class _01_basicLambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		action((a, b) -> {
+			int result = a + b;
+			System.out.println(result);
+		});
+		
+		action((a, b) -> {
+			int result = a - b;
+			System.out.println(result);
+		});
+	}
+	
+	public static void action(Calculator calc) {
+		int a = 10;
+		int b = 4;
+		
+		calc.calculate(a, b);
+	}
+	
+}
