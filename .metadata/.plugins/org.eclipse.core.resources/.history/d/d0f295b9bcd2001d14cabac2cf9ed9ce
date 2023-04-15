@@ -1,8 +1,0 @@
-package chap20_lambda.clazz;
-
-public class Comparing {
-	static boolean comparingstr(String a, String b){
-		boolean result = a.equals(b);
-		return result;
-	}
-}

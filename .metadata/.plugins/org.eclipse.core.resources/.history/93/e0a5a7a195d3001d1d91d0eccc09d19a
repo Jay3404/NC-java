@@ -1,6 +1,0 @@
-package chap98_homework.HW_20230405.clazz;
-
-public class Card {
-	private String cardName; 
-	private int validYear;
-}

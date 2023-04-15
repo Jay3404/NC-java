@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chap22_IO._01_useOfPhoneInfo&apos; to &apos;_10_useOfPhoneInfo&apos;&#x0D;&#x0A;- Original project: &apos;JavaLecture&apos;&#x0D;&#x0A;- Original element: &apos;chap22_IO._01_useOfPhoneInfo&apos;&#x0D;&#x0A;- Renamed element: &apos;chap22_IO._10_useOfPhoneInfo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_01_useOfPhoneInfo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chap22_IO{_01_useOfPhoneInfo.java[_01_useOfPhoneInfo" matchStrategy="1" name="_10_useOfPhoneInfo" qualified="false" references="true" similarDeclarations="false" stamp="1681090586239" textual="false" version="1.0"/>
+</session>

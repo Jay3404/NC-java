@@ -1,7 +1,0 @@
-package chap20_lambda.clazz;
-
-public class MoneyConvertor {
-	public static void operation(int a, int b, char op) {
-		
-	}
-}

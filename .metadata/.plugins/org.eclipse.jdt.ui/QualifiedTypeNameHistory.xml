@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="chap06_class.animal.bird"/>
-    <fullyQualifiedTypeName name="chap06_class.phone.PhoneInfo"/>
-    <fullyQualifiedTypeName name="chap07_inherit.car.Car"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Laserprint"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Printer"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Inkprint"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Calc"/>
-    <fullyQualifiedTypeName name="chap98_homework.HW4_20230317.Prob0317.Add"/>
-    <fullyQualifiedTypeName name="chap98_homework.nc230320.mammal.Mammal"/>
     <fullyQualifiedTypeName name="chap99_etc.device.LgTv"/>
     <fullyQualifiedTypeName name="chap09_polymorphism.product.SamsungTv"/>
     <fullyQualifiedTypeName name="chap99_etc.device.SamsungTv"/>
@@ -30,7 +19,6 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="chap12_nestedclass.clazz.Car"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="chap06_class.car.Car"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -58,4 +46,18 @@
     <fullyQualifiedTypeName name="chap21_stream.clazz.HyundaiCar"/>
     <fullyQualifiedTypeName name="chap98_homework.HW_20230405.clazz.Card"/>
     <fullyQualifiedTypeName name="chap19_multithread._08_NonSyncShareObj"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="chap22_IO.phoneinfo.PhoneInfo"/>
+    <fullyQualifiedTypeName name="chap22_IO._11_dataInputOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="chap22_IO.clazz.Car"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
