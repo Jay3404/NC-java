@@ -1,33 +1,52 @@
 --1) 화학과를 제외하고 학과별로 학생들의 평점 평균을 검색하세요
 SELECT MAJOR
-     , AVG(AVR) AS AVR
+     , ROUND(AVG(AVR), 2) AS 평균평점
     FROM STUDENT
     GROUP BY MAJOR
     HAVING MAJOR != '화학';
 
 --2) 화학과를 제외한 각 학과별 평균 평점 중에 평점이 2.0 이상인 정보를 검색하세요
 SELECT MAJOR
-     , AVG(AVR) AS AVR
+     , ROUND(AVG(AVR), 2) AS 평균평점
     FROM STUDENT
     GROUP BY MAJOR
     HAVING MAJOR != '화학'
     AND AVG(AVR) >= 2.0;
 
 --3) 기말고사 평균이 60점 이상인 학생의 정보를 검색하세요
-SELECT SNO
-     , ROUND(AVG(RESULT),2)
-    FROM SCORE
-    GROUP BY SNO
-    HAVING AVG(RESULT) > 60;
+SELECT ST.SNO
+     , ST.SNAME
+     , ST.MAJOR
+     , SC.RESULT
+    FROM STUDENT ST
+    JOIN (
+            SELECT SNO
+                 , ROUND(AVG(RESULT),2) AS RESULT
+                FROM SCORE
+                GROUP BY SNO
+                HAVING AVG(RESULT) >= 60
+        ) SC
+    ON ST.SNO = SC.SNO;
 
 --4) 강의 학점이 3학점 이상인 교수의 정보를 검색하세요
-SELECT PNO
-     , SUM(ST_NUM)
-    FROM COURSE
-    GROUP BY PNO
-    HAVING SUM(ST_NUM) >= 3
-    AND PNO IS NOT NULL;
-
+SELECT P.PNO
+     , P.PNAME
+     , P.SECTION
+     , C.CNAME
+     , CO.ST_NUM
+    FROM PROFESSOR P
+    JOIN (
+            SELECT PNO
+                 , SUM(ST_NUM) AS ST_NUM
+                FROM COURSE
+                GROUP BY PNO
+                HAVING SUM(ST_NUM) >= 3
+                AND PNO IS NOT NULL
+        ) CO
+    ON P.PNO = CO.PNO
+    JOIN COURSE C
+    ON P.PNO = C.PNO;
+    
 --5) 기말고사 평균 성적이 핵 화학과목보다 우수한 과목의 과목명과 담당 교수명을 검색하세요
 SELECT AVRT.CNAME
      , AVRT.CNO
@@ -50,7 +69,18 @@ SELECT AVRT.CNAME
                 ON SC.CNO = CO.CNO
             ) AVRT
     ON P.PNO = AVRT.PNO
-    WHERE AVRT.RESULT > 50.49;
+    WHERE AVRT.RESULT >= (
+                           SELECT SC.RESULT
+                                FROM COURSE CO
+                                JOIN (
+                                        SELECT CNO
+                                             , AVG(RESULT) AS RESULT
+                                            FROM SCORE
+                                            GROUP BY CNO
+                                        ) SC
+                                ON SC.CNO = CO.CNO
+                                WHERE CO.CNAME = '핵화학'
+                            );
 
 --6) 근무 중인 직원이 4명 이상인 부서를 검색하세요
 SELECT D.DNO
