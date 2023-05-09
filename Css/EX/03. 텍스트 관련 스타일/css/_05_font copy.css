@@ -1,9 +1,9 @@
 .txt1 {
-    font: 700 italic 15px/30px 굴림;
+    font: 15px;
 }
 
 .txt2 {
-    font: 200 small-caps 30px/40px 돋움;
+    font: small-caps 30px/40px;
 }
 
 .cap {

@@ -1,3 +1,7 @@
+li {
+    font-variant: small-caps;
+}
+
 #content1 {
     font-weight: bold;
 }
@@ -11,5 +15,5 @@
 }
 
 #content4 {
-    font-weight: 100;
+    font-weight: 900;
 }

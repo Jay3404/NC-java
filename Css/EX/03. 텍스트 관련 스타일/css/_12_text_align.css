@@ -22,7 +22,7 @@ p {
 
 .justify2 {
     text-align: justify;
-    -webkit-text-justify: distribute;
-    -ms-text-justify: distribute;
-    text-justify: distribute;
+    -webkit-text-justify: inter-word;
+    -ms-text-justify: inter-word;
+    text-justify: inter-word;
 }
