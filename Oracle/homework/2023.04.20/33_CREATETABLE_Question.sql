@@ -37,3 +37,66 @@ CREATE TABLE PAYMENT_DETAIL(
     CONSTRAINT FK_DETAIL_PNO FOREIGN KEY(PNO)
             REFERENCES PRODUCT(PNO)
 );
+
+
+
+DECLARE
+    TYPE AVG_RESULT_REC IS RECORD(
+        CNO COURSE.CNO%TYPE,
+        CNAME COURSE.CNAME%TYPE,
+        AVG_RESULT SCORE.RESULT%TYPE
+    );
+
+    TYPE RESULT_ARRAY IS TABLE OF AVG_RESULT_REC
+    INDEX BY PLS_INTEGER;
+
+    IDX NUMBER := 1;
+    RESULTARR RESULT_ARRAY;
+
+    
+
+BEGIN
+    
+    LOOP
+        DBMS_OUTPUT.PUT_LINE('--------------------------------------');
+
+        SELECT CNO
+             , CNAME
+             , NVL(AVGRESULT, '0')
+            INTO RESULTARR(IDX).CNO, RESULTARR(IDX).CNAME, RESULTARR(IDX).AVG_RESULT
+            FROM (
+                    SELECT ROWNO
+                         , CNO
+                         , CNAME
+                         , AVGRESULT
+                        FROM (
+                                SELECT ROWNUM AS ROWNO
+                                     , CNO
+                                     , CNAME
+                                     , AVGRESULT
+                                
+                                FROM (
+                                    SELECT COURSE.CNO
+                                         , COURSE.CNAME
+                                         , AVG(RESULT) AS AVGRESULT
+                                        
+                                        FROM COURSE
+                                        LEFT JOIN SCORE
+                                        ON COURSE.CNO = SCORE.CNO
+                                        GROUP BY COURSE.CNO, COURSE.CNAME
+                                        ORDER BY CNO
+                                    )
+                                )
+                    WHERE ROWNO = IDX
+        );
+        
+        DBMS_OUTPUT.PUT_LINE(RESULTARR(IDX).CNO);
+        DBMS_OUTPUT.PUT_LINE(RESULTARR(IDX).CNAME);
+        DBMS_OUTPUT.PUT_LINE(RESULTARR(IDX).AVG_RESULT);
+        IDX := IDX + 1;
+        
+        
+        EXIT WHEN IDX >= 36;
+    END LOOP;
+END;
+/

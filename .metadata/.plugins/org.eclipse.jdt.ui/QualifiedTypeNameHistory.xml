@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="chap99_etc.device.LgTv"/>
-    <fullyQualifiedTypeName name="chap09_polymorphism.product.SamsungTv"/>
-    <fullyQualifiedTypeName name="chap99_etc.device.SamsungTv"/>
-    <fullyQualifiedTypeName name="chap12_nestedclass._02_instanceOfNestedClass.Outer.Mul"/>
-    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.NestedClass.Mul"/>
-    <fullyQualifiedTypeName name="chap12_nestedclass.clazz.NestedClass.Div"/>
     <fullyQualifiedTypeName name="chap12_nestedclass.NestedClass.Sub"/>
     <fullyQualifiedTypeName name="chap12_nestedclass.NestedClass.Add"/>
     <fullyQualifiedTypeName name="chap12_nestedclass.clazz.Calc"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="chap99_etc.Solution"/>
+    <fullyQualifiedTypeName name="java.awt.image.AbstractMultiResolutionImage"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Driver"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 </qualifiedTypeNameHistroy>

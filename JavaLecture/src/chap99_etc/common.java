@@ -1,16 +1,32 @@
 package chap99_etc;
 
-
-import chap99_etc.device.LgTv;
-import chap99_etc.device.SamsungTv;
-
-public class common {
-
-	public static void main(String[] args) {
+class common {
+	public static String[] solution(String[] players, String[] callings) {
+		 String[] answer = players;
+	        String[] result = {"a"};
+	        int pos = 0;
+	        
+	        
+	        for(int j = 0; j < callings.length; j++) {
+		        for(int i = 0; i < players.length; i++) {
+		        	if(players[i].equals(callings[j])) {
+		        		pos = i;
+	                    break;
+		        		}
+		        	}
+		        result[0] = players[pos];
+		        players[pos] = players[pos - 1];
+		        players[pos - 1] = result[0];  
+		    }
+	        answer = players;
+	        return answer;
+	}
+    public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		long a = 1000* 60 * 60 * 24 * 30;
-		System.out.println(a);
+		String[] players = {"mumu", "soe", "poe", "kai", "mine"};
+		String[] callings = {"kai", "kai", "mine", "mine"};
+		
+		System.out.println(solution(players, callings));
 		
 	}
-
 }

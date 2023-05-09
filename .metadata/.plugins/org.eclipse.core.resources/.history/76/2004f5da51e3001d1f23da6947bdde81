@@ -1,0 +1,35 @@
+package chap99_etc;
+
+class common {
+    public static String solution(String[] seoul) {
+        String answer = "";
+        
+        int idx = 0;
+        
+        for(int i = 0; i < seoul.length; i++) {
+        	if(seoul[i] == "Kim") {
+        		idx = i;
+        	}
+        	
+        }
+        
+        answer = "김서방은 " + idx + "에 있다";
+        return answer;
+    }
+    
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "afgweg";
+		String answer = "";
+		
+		for(int i = 0; i < a.length(); i++){
+            if(a.charAt(i) > 'a' && a.charAt(i) < 'z') {
+            	answer = answer + (char)(a.charAt(i) - 32);
+            }
+        
+        }
+		
+		System.out.println(answer);
+		
+	}
+}

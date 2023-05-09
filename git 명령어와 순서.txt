@@ -1,0 +1,31 @@
+1. 처음 깃에 올릴 때
+    - 깃허브에 로그인하여 원격저장소(repository) 새로 생성
+    - git bash를 실행해서 올릴 폴더로 이동
+    - git init으로 로컬저장소(repository) 생성
+    - 원격저장소의 주소를 복사해와서 git remote add 원격저장소 주소
+    - git branch -M main : main 브랜치로 변경
+    - git pull origin main : 원격저장소에 있는 내용을 다운
+    - git add . 이나 git add 변경파일 : 스테이징(임시로 파일들을) 올린다.
+    - git commit -m "메시지" : 스테이징되어있는 파일들을 로컬저장소에 반영
+    - git push -u origin main : 로컬저장소의 수정사항을 원격저장소에 반영
+
+2. 올린 폴더에서 작업 후에는
+    - git pull origin main : 변경된 사항이 있으면 다운
+    - git add . 이나 git add 변경파일 : 스테이징(임시로 파일들을) 올린다.
+    - git commit -m "메시지" : 스테이징되어있는 파일들을 로컬저장소에 반영
+    - git push -u origin main : 로컬저장소의 수정사항을 원격저장소에 반영
+
+3. 새로운 Pc에서 원격저장소의 내용 다운받기
+    - git bash를 실행해서 다운로드 받을 폴더까지 이동
+    - git clone 원격저장소 주소 : 원격저장소에 있는 내용을 다운받으면서 로컬저장소도 생성
+
+4. clone하고나서 작업 순서
+    - git pull origin main : 변경된 사항이 있으면 다운
+    - git add . 이나 git add 변경파일 : 스테이징(임시로 파일들을) 올린다.
+    - git commit -m "메시지" : 스테이징되어있는 파일들을 로컬저장소에 반영
+    - git push -u origin main : 로컬저장소의 수정사항을 원격저장소에 반영
+
+5. 내 원격, 로컬저장소에 문제 생겼을 때
+    - clone으로 백업
+    - 원격저장소 삭제
+    - 로컬저장소(.git 폴더) 삭제
