@@ -1,0 +1,17 @@
+div { 
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.box1 {
+    background: red;
+}
+
+.box2 {
+    background: green;
+}
+
+.box3 {
+    background: blue;
+}

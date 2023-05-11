@@ -1,0 +1,17 @@
+div {
+    margin: 10px;
+}
+
+.box1 {
+    background: orange;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border: 10px solid black;
+}
+
+.box2 {
+    background: skyblue;
+    width: 50%;
+    height: 300px;
+}

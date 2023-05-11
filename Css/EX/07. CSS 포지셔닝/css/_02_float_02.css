@@ -1,0 +1,27 @@
+div {
+    width: 30px;
+    height: 30px;
+}
+
+.box1 {
+    background-color: orange;
+    margin-right: 10px;
+    padding: 20px;
+    float: left; 
+}
+.box2 {
+    background-color: skyblue;
+    margin-right: 10px;
+    padding: 20px;
+    float: left; 
+}
+.box3 {
+    background-color: lightgreen;
+    padding: 20px;
+    float: left; 
+}
+.box4 {
+    background-color: lightgray;
+    padding: 20px;
+    float: right; 
+}

@@ -1,0 +1,39 @@
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: solid;
+}
+
+.box1 {
+    border-top-width: 1px;
+    border-right-width: 5px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+
+    border-top-color: red;
+    border-right-color: green;
+    border-bottom-color: blue;
+    border-left-color: yellow;
+}
+
+.box2 {
+    /*상 우 하 좌 순으로 적용*/
+    border-width: 1px 5px 15px 20px;
+
+    border-color: red green blue yellow;
+}
+
+.box3 {
+    /*첫 번째 값은 상하, 두 번째 값은 좌우로 적용*/
+    border-width: 10px 20px;
+
+    border-color: red green;
+}
+
+.box4 {
+    border-width: 10px;
+
+    border-color: blue;
+}

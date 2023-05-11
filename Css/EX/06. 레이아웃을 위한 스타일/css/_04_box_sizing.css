@@ -1,0 +1,21 @@
+div {
+    margin: 10px;
+}
+
+.box1 {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.box2 {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    box-sizing: content-box;
+}

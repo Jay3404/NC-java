@@ -1,0 +1,26 @@
+div {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.txt1 {
+    background: red;
+}
+
+.txt2 {
+    background: green;
+}
+
+.txt3 {
+    background: blue;
+}
+
+.inline p {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}

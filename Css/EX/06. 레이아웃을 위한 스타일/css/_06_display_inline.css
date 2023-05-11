@@ -1,0 +1,20 @@
+div {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.txt1 {
+    background: red;
+}
+
+.txt2 {
+    background: green;
+}
+
+.txt3 {
+    background: blue;
+}
+
+.inline p {
+    display: inline;
+}

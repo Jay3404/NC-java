@@ -1,0 +1,27 @@
+div {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+span {
+    color: white;
+}
+
+.box1 {
+    background: red;
+}
+
+.box2 {
+    background: green;
+}
+
+.box3 {
+    background: blue;
+}
+
+.block span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}

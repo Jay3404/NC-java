@@ -1,0 +1,29 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    display: inline-block;
+    border: 5px solid black;
+    margin: 15px;
+    background-clip: content-box;
+}
+
+.box1 {
+    /* padding: 10px 30px 10px 30px; */
+    padding: 10px 30px;
+}
+
+.box2 {
+    padding: 10px 5px 15px;
+}
+
+.box3 {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.box4 {
+    padding: 5%;
+}

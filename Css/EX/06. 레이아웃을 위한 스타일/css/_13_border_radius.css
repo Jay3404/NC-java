@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.box1 {
+    border-radius: 10px;
+}
+
+.box2 {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 15px;
+}
+
+.box3 {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

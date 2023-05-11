@@ -1,0 +1,23 @@
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 10px black;
+}
+
+.box1 {
+    border-style: solid;
+}
+
+.box2 {
+    border-style: dotted;
+}
+
+.box3 {
+    border-style: dashed;
+}
+
+.box4 {
+    border-style: double;
+}
