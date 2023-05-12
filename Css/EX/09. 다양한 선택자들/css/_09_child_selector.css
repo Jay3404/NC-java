@@ -1,0 +1,5 @@
+/*.box1에 하위에 있는 span 태그 선택하여 스타일 적용*/
+.box1 > span {
+    background-color: aqua;
+    color: red;
+}

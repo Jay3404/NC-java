@@ -1,0 +1,15 @@
+div {
+    margin-top: 20px;
+}
+
+/*.nsibling 태그 바로 뒤에서 생성된 형제 p태그만 선택하여 스타일적용*/
+.nsibling + p {
+    background-color: aqua;
+    color: red;
+}
+
+/*.sibliing 태그 뒤에 생성된 모든 p태그 선택하여 스타일 적용*/
+.sibling ~ p {
+    background-color: yellow;
+    color: green;
+}

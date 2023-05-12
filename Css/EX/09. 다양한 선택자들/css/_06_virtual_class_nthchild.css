@@ -1,0 +1,14 @@
+table, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*n번째에 있는 자식 태그 선택자
+숫자를 직접 입력하거나 2n(짝수), 2n+1(홀수), even(짝수), odd(홀수) 등 입력가능*/
+table tr:nth-child(2n+1) {
+    background-color: yellow;
+    color: green;
+}

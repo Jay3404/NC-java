@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+/*.box1에 마우스 커서가 올라갔을 때 해당 태그 이동*/
+.box1:hover {
+    transform: translate(30px, 30px);
+}
+
+.box2 {
+    background-color: skyblue;
+}
+
+/*.box2에 마우스 커서가 올라갔을 때 해당 태그 이동*/
+.box2:hover {
+    transform: translateX(50px);
+}
+
+.box3 {
+    background-color: lightgreen;
+}
+
+/*.box3에 마우스 커서가 올라갔을 때 해당 태그 이동*/
+.box3:hover {
+    transform: translateY(20px);
+}

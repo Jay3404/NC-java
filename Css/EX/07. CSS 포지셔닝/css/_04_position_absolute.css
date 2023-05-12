@@ -1,0 +1,53 @@
+.body {
+    width: 2000px;
+    height: 2000px;
+    position: relative;
+}
+.container {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    margin: 250px auto;
+    border: 1px solid black;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#box1 {
+    top: 0;
+    left: 0;
+    background-color: orange;
+}
+
+#box2 {
+    top: 0;
+    right: 0;
+    background-color: aqua;
+}
+
+#box3 {
+    bottom: 0;
+    left: 0;
+    background-color: lightgreen;
+}
+
+#box4 {
+    bottom: 0;
+    right: 0;
+    background-color: blueviolet;
+}
+
+#box5 {
+    top: 100px;
+    left: 100px;
+    background-color: gold;
+}

@@ -1,0 +1,14 @@
+/*name 속성을 가지고 있는 모든 input 태그 선택*/
+input[name] {
+    width: 100px;
+    height: 100px;
+    color: blue;
+}
+
+/*name="userId"인 input 태그 모두 선택*/
+#userPw[name="userPw"] {
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px dotted blue;
+    background-color: orange;
+}

@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+.box2 {
+    background-color: aqua;
+    position: relative;
+    /*left, right 동시에 적용하는 경우는 드물다*/
+    left: 150px;
+    /*top, bottom을 동시에 적용하는 경우는 드물다*/
+    top: 20px;
+}

@@ -1,0 +1,4 @@
+p:not(.txt) {
+    background-color: aqua;
+    color: red;
+}

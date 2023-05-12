@@ -1,0 +1,11 @@
+/*.container1 하위에 있는 모든 span 태그 선택하여 스타일 적용*/
+.container1 span {
+    background-color: aqua;
+    color: red;
+}
+
+/*.container2 자식 레벨에 있는 span태그들만 선택하여 스타일 적용*/
+.container2 > span {
+    background-color: yellow;
+    color: green;
+}

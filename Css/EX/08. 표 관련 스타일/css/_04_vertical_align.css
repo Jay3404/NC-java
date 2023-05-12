@@ -1,0 +1,28 @@
+table {
+    border: 1px solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th, td {
+    border: 1px solid black;
+    height: 100px;
+}
+
+td {
+    /* padding: 20px; */
+    text-align: right;
+}
+
+.td1 {
+    vertical-align: top;
+}
+
+.td2 {
+    vertical-align: middle;
+}
+
+.td3 {
+    vertical-align: bottom;
+}

@@ -1,0 +1,36 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+/*.box1에 마우스 커서가 올라갔을 때 해당 태그 축소/확대*/
+.box1:hover {
+    /*수평으로 1.2배 확대, 수직으로 0.7배 축소*/
+    transform: scale(1.2, 0.7);
+}
+
+.box2 {
+    background-color: skyblue;
+}
+
+/*.box2에 마우스 커서가 올라갔을 때 해당 태그 축소/확대*/
+.box2:hover {
+    /*수평으로 0.5배 축소*/
+    transform: scaleX(0.5);
+}
+
+.box3 {
+    background-color: lightgreen;
+}
+
+/*.box3에 마우스 커서가 올라갔을 때 해당 태그 축소/확대*/
+.box3:hover {
+    /*수직으로 1.5배 확대*/
+    transform: scaleY(1.5);
+}

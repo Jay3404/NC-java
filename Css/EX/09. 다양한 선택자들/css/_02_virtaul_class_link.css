@@ -1,0 +1,13 @@
+/*사용자가 방문하지 않은 링크에 대한 스타일*/
+a:link {
+    color: orange;
+}
+
+/*사용자가 방문했던 링크에 대한 스타일*/
+a:visited {
+    color:lightgreen
+}
+
+a {
+    text-decoration: none;
+}

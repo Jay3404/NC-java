@@ -1,0 +1,11 @@
+input[name="language"]:checked + span {
+    color: red;
+}
+
+input[name="favorite"]:checked + span{
+    color: aqua;
+}
+
+input {
+    color: black;
+}

@@ -1,0 +1,22 @@
+.container {
+    /*원근감을 추가하는 속성*/
+    perspective: 200px;
+}
+
+/*.box1에 마우스 커서가 올라갔을 때 해당 태그 회전*/
+.box1:hover {
+    /*45도만큼 x축, y축 기준으로 회전*/
+    transform: rotate(45deg);
+}
+
+/*.box2에 마우스 커서가 올라갔을 때 해당 태그 회전*/
+.box2:hover {
+    /*45도만큼 x축 기준으로 회전*/
+    transform: rotateX(45deg);
+}
+
+/*.box3에 마우스 커서가 올라갔을 때 해당 태그 회전*/
+.box3:hover {
+    /*45도만큼 y축 기준으로 회전*/
+    transform: rotateY(45deg);
+}

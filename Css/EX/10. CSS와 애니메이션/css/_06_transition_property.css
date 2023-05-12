@@ -1,0 +1,25 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.box1 {
+    background-color: green;
+    transition-property: width, height;
+    transition-duration: 3s, 7s;
+}
+
+.box2 {
+    background-color: blue;
+    transition-duration:3s ;
+}
+
+.box1:hover {
+    width: 200px;
+    height: 150px;
+}
+
+.box2:hover {
+    border-radius: 13%;
+}

@@ -1,0 +1,20 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+.box2 {
+    background-color: aqua;
+    visibility: visible;
+    display: none;
+}
+
+.box3 {
+    background-color: blue;
+}

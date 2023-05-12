@@ -1,0 +1,36 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.box1 {
+    background-color: orange;
+}
+
+/*.box1에 마우스 커서가 올라갔을 때 해당 태그 왜곡*/
+.box1:hover {
+    /*x축 기준으로 45도, y축 기준으로 30도 비틀기*/
+    transform: skew(45deg, 30deg);
+}
+
+.box2 {
+    background-color: skyblue;
+}
+
+/*.box2에 마우스 커서가 올라갔을 때 해당 태그 왜곡*/
+.box2:hover {
+    /*x축 기준으로 -25도 비틀기*/
+    transform: skewX(25deg);
+}
+
+.box3 {
+    background-color: lightgreen;
+}
+
+/*.box3에 마우스 커서가 올라갔을 때 해당 태그 왜곡*/
+.box3:hover {
+    /*y축 기준으로 10도 비틀기*/
+    transform: skewY(10deg);
+}

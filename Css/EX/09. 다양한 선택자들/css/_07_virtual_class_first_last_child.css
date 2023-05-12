@@ -1,0 +1,19 @@
+table, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*자식태그 중 첫 번째 태그를 선택하여 스타일을 적용하는 first-child*/
+table tr:first-child {
+    background-color: olive;
+    color: white;
+}
+
+/*자식태그 중 마지막 태그를 선택하여 스타일을 적용하는 last-child*/
+table tr:last-child {
+    background-color: aqua;
+    color: red;
+}
