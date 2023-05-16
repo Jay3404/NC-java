@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* 1. 공통부분 작성 */
+html{
+    font-size: 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, sans-serif;
+    line-height: 1.7;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 2. 헤더 부분 */
+/* 헤더 위치 조정 */
+.page-header {
+    position: relative;
+
+}
+
+/* 로고 스타일 및 위치 */
+.logo-wrap {
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.menu-wrap {
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 1.25rem;
+
+}
+
+.main-menu li {
+    margin-left: 70px;
+    position: relative;
+    float: left;
+}
+
+/* 로그인,회원가입 스타일 및 위치 */
+.user-menu {
+    z-index: 2;
+    font-size: 0.75rem;
+    display: flex;
+    margin-top: 24px;
+}
+
+.user-menu li {
+    margin-left: 36px;
+}
+
+/* 헤더 안의 내용 정렬 */
+
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+}
