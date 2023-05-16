@@ -1,0 +1,17 @@
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.box1:hover, .box2:hover {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.box2 {
+    transition-delay: 3s;
+}

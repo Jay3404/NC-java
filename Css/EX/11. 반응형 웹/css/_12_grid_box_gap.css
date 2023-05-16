@@ -1,0 +1,37 @@
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+
+    /*그리드 항목 간격 조절*/
+    /*컬럼 간격조절*/
+    /* grid-column-gap: 30px; */
+    /*줄 간격조절*/
+    /* grid-row-gap: 20px; */
+    /*컬럼, 줄 간격 한 번에 조절*/
+    grid-gap: 20px 30px;
+}
+
+.box1 {
+    background: red;
+}
+.box2 {
+    background: blue;
+}
+.box3 {
+    background: green;
+}
+.box4 {
+    background: brown;
+}
+.box5 {
+    background: violet;
+}
+.box6 {
+    background: yellow;
+}
+.box7 {
+    background: aqua;
+}
+.box8 {
+    background: yellowgreen;
+}

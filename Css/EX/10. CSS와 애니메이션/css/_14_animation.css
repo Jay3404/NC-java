@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.box1 {
+    background-color: orange;
+    animation: ch-bg 3s linear alternate infinite;
+}
+
+.box2 {
+    background-color: lightgreen;
+    animation: ch-shp 5s ease-in reverse 5;
+}
+
+@keyframes ch-bg {
+    from {
+        background-color: orange;
+    }
+    to {
+        background-color: aqua;
+    }
+}
+
+@keyframes ch-shp {
+    from {
+        border-radius: 0;
+    }
+    to {
+        border-radius: 50%;
+    }
+}

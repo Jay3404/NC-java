@@ -1,0 +1,27 @@
+.container1, .container2, .container3, .container4 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.container1 {
+    flex-direction: row;
+}
+
+.container2 {
+    flex-direction: row-reverse;
+}
+
+.container3 {
+    flex-direction: column;
+}
+
+.container4 {
+    flex-direction: column-reverse;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

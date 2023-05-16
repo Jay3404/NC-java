@@ -12,7 +12,8 @@ div {
 
 .box2 {
     background-color: blue;
-    transition-duration:3s ;
+    transition-property: border-radius;
+    transition-duration: 3s;
 }
 
 .box1:hover {
@@ -21,5 +22,5 @@ div {
 }
 
 .box2:hover {
-    border-radius: 13%;
+    border-radius: 50%;
 }

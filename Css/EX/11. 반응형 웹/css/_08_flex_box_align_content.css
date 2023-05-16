@@ -1,0 +1,14 @@
+.container1 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 500px;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 300px;
+    background-color: green;
+    margin: 20px;
+}

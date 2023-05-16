@@ -1,0 +1,32 @@
+.container1, .container2, .container3, .container4, .container5 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.container1 {
+    justify-content: flex-start;
+}
+
+.container2 {
+    justify-content: flex-end;
+}
+
+.container3 {
+    justify-content: center;
+}
+
+.container4 {
+    justify-content: space-around;
+}
+
+.container5 {
+    justify-content: space-between;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+}

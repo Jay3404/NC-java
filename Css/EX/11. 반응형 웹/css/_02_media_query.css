@@ -1,0 +1,30 @@
+.box {
+    background-color: orange;
+    width: 400px;
+    height: 400px;
+}
+
+/*미디어 쿼리 작성*/
+/*PC화면*/
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*태블릿 화면*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/*스마트 폰 화면*/
+@media screen and (max-width: 767px) {
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}

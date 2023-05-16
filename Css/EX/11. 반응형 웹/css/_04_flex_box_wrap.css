@@ -1,0 +1,21 @@
+.container1 {
+    display: flex;
+    border: 1px solid black;
+    /*nowrap: 플렉스 항목 한 줄로 표시*/
+    /*flex-wrap: nowrap;*/
+    /*wrap: 플렉스 항목 여러줄로 표시. 시작점과 끝점 기본으로 유지*/
+    /*flex-wrap: wrap;*/
+    /*wrap-reverse: 플렉스 항목 여러줄로 배치. 시작점과 끝점 반전*/
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-flow: flex-direction + flex-wrap*/
+    flex-flow: column wrap;
+    height: 1000px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    color: white;
+    background-color: green;
+}

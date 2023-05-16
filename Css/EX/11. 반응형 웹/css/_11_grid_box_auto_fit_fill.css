@@ -1,0 +1,37 @@
+.container1, .container2 {
+    display: grid;
+    margin: 20px;
+}
+
+.container1 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.container2 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.box1 {
+    background: red;
+}
+.box2 {
+    background: blue;
+}
+.box3 {
+    background: green;
+}
+.box4 {
+    background: brown;
+}
+.box5 {
+    background: violet;
+}
+.box6 {
+    background: yellow;
+}
+.box7 {
+    background: aqua;
+}
+.box8 {
+    background: yellowgreen;
+}

@@ -1,0 +1,33 @@
+.container1, .container2, .container3, .container4, .container5 {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.container1 {
+    align-items: flex-start;
+}
+
+.container2 {
+    align-items: flex-end;
+}
+
+.container3 {
+    align-items: center;
+}
+
+.container4 {
+    align-items: baseline;
+}
+
+.container5 {
+    align-items: stretch;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+}
