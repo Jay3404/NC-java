@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var의 문제점`</title>
+</head>
+<body>
+    <script>
+        //1. 중복선언 가능
+        var x = 1;
+        var y = 2;
+
+        var x = 100;
+
+        //초기화 없는 선언문은 무시
+        var y;
+
+        console.log(`${x}`);
+        console.log(`${y}`);
+
+        //let은 중복 선언이 안된다.
+        let z = 10;
+    </script>
+</body>
+</html>

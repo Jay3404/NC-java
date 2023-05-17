@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch조건문</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.getElementsByClassName("box")[0];
+
+        const month = prompt("현재 몇 월입니까?");
+
+        console.log(typeof month);
+        //month = parseInt(month);
+        switch(month) {
+            case "1": case "2": case "12":
+                alert("겨울입니다.");
+                box.style.background = 'skyblue';
+                break;
+            case "3": case "4": case "5":
+                alert("봄입니다.");
+                box.style.background = 'lightgreen';
+                break;
+            case "6": case "7": case "8":
+                alert("여름입니다.");
+                box.style.background = 'red';
+                break;
+            case "9": case "10": case "11":
+                alert("가을입니다.");
+                box.style.background = 'brown';
+                break;
+        }
+
+        // if(month == 12 || month == 1 || month == 2) {
+        //     alert("겨울입니다.");
+        //     box.style.background = 'skyblue';
+        // } else if(month == 3 || month == 4 || month == 5) {
+        //     alert("봄입니다.");
+        //     box.style.background = 'lightgreen';
+        // } else if(month == 6 || month == 7 || month == 8) {
+        //     alert("여름입니다.");
+        //     box.style.background = 'red';
+        // } else if(month == 9 || month == 10 || month == 11) {
+        //     alert("가을입니다.");
+        //     box.style.background = 'brown';
+        // } 
+    </script>
+</body>
+</html>

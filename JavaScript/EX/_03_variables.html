@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 선언과 사용</title>
+</head>
+<body>
+    <script>
+        //ES5
+        var num1 = 100;
+        var strNum1 = "100";
+        var bool1 = true;
+
+        console.log("typeof num1 : " + typeof num1);
+        console.log("typeof strNum1 : " + typeof strNum1);
+        console.log(bool1);
+        console.log("-------------------------------");
+
+        //ES6
+        //기본 변수
+        let num2 = 13.71;
+        let strNum2 = "200";
+        let bool2 = false;
+        let undef;
+        let nullVal = null;
+
+        //상수
+        const pi = 3.14;
+
+        console.log("typeof num2 : " + typeof num2);
+        console.log("typeof strNum2 : " + typeof strNum2);
+        console.log(undef);
+        console.log(nullVal);
+        console.log(pi);
+
+        //상수의 값 변경
+        pi = 1.11;
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+        //1. 산술연산자
+        const num1 = 10;
+        const num2 = 20;
+
+        console.log(`num1 + num2 = ${num1 + num2}`);
+        console.log(`num1 - num2 = ${num1 - num2}`);
+        console.log(`num1 * num2 = ${num1 * num2}`);
+        console.log(`num1 / num2 = ${num1 / num2}`);
+        console.log(`num1 % num2 = ${num1 % num2}`);
+        console.log("---------------------------");
+
+        //2. 대입연산자
+        let num3 = 10;
+        console.log(`num3 += 10 => ${num3 += 10}`);
+        console.log(`num3 -= 10 => ${num3 -= 10}`);
+        console.log(`num3 *= 10 => ${num3 *= 10}`);
+        console.log(`num3 /= 10 => ${num3 /= 10}`);
+        console.log(`num3 %= 10 => ${num3 %= 10}`);
+        console.log("---------------------------");
+
+        //3. 대입연산자로 태그 만들기
+        let table = '<table style="border: 1px solid black; border-collapse: collapse;">';
+        table += "  <tr>";
+        table += "      <td style='border: 1px solid black;'>1</td>";
+        table += "      <td style='border: 1px solid black;'>2</td>";
+        table += "      <td style='border: 1px solid black;'>3</td>";
+        table += "  </tr>";
+        table += "</table>";
+        document.write(table);
+
+        //4. 비교연산자
+        const num4 = 101;
+        const strNum4 = "101";
+        
+        //==, !=은 값만 비교
+        console.log(`num4 == strNum4 => ${num4 == strNum4}`);
+        //===, !==은 값과 자료형도 비교
+        console.log(`num4 === strNum4 => ${num4 === strNum4}`);
+
+    </script>
+</body>
+</html>

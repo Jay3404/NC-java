@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그 문자열</title>
+</head>
+<body>
+    <script>
+        let htmlStr = "<h1>hello</h1>";
+        //documnet: html 웹 문서를 가지는 객체
+        document.write(htmlStr);
+
+        //사용자로부터 값을 입력받는 prompt
+        let name = prompt("이름을 입력하세요.");
+
+        console.log(name);
+        document.write(name);
+        
+        //alert과 confirm
+        //alert: 경고창, 알림창을 띄워주는 메소드. 메시지를 개발자가 입력할 수 있다. 메시지에 변수를 넣어도 된다.
+        //alert("알림창");
+        //alert(name);
+
+        //confirm: 확인창을 띄워주는 메소드. 사용자가 확인을 누르면 true, 취소를 누르면 false를 리턴
+        if(confirm(`입력하신 이름이 ${name}입니까?`)) {
+            alert("정상입력되었습니다.");
+        } else {
+            alert("잘못 입력하셨습니다.");
+        }
+
+    </script>
+</body>
+</html>

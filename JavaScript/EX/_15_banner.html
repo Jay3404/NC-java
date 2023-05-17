@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배너 배치하기</title>
+    <style>
+        #btnStart {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btnStart" >배치 시작하기</button>
+    <div class="image-container">
+        <img src="banners/1.png" alt="배너" class="banner">
+        <img src="banners/2.png" alt="배너" class="banner">
+        <img src="banners/3.png" alt="배너" class="banner">
+        <img src="banners/4.png" alt="배너" class="banner">
+        <img src="banners/5.png" alt="배너" class="banner">
+        <img src="banners/6.png" alt="배너" class="banner">
+        <img src="banners/7.png" alt="배너" class="banner">
+        <img src="banners/8.png" alt="배너" class="banner">
+    </div>
+    <script>
+        const btn = document.getElementById("btnStart");
+
+        btn.addEventListener('click', function() {
+            const images = document.getElementsByClassName('banner');
+
+            for(let i = 0; i < images.length; i++){
+                let left = (i % 4) * 200;
+
+                let top = parseInt(i/4) * 200;
+
+                images[i].style.left = left + 'px';
+                images[i].style.top = top + 'px';
+            }
+
+
+
+        });
+
+    </script>
+</body>
+</html>

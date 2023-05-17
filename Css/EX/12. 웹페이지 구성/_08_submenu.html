@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비트캠프</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="https://www.bitcamp.co.kr/theme/basic/img/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/slide(carousel).js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--헤더 영역: 로고 + 메뉴 + 로그인 + 라지 슬라이드-->
+    <header class="page-header">
+        <!--로고 + 메뉴 바 + 로그인-->
+        <div class="header-wrap">
+            <!--로고-->
+            <h1 class="logo-wrap">
+                <a href="#">
+                    <img src="https://bitcamp.co.kr/theme/basic/img/bit_white_logo.png" alt="비트캠프 로고">
+                </a>
+            </h1>
+
+            <!--메뉴바-->
+            <nav class="menu-wrap">
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">비트캠프</a>
+                    </li>
+                    <li>
+                        <a href="#">교육과정</a>
+                        <ul class="lecture-submenu">
+                            <li>
+                                <a href="#">진행중인 강좌</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#">예정 강좌</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">블로그</a>
+                    </li>
+                    <li>
+                        <a href="#">강사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">게시판</a>
+                        <ul class="board-submenu">
+                            <li>
+                                <a href="#">자유게시판</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#">QnA</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--로그인/회원가입-->
+            <ul class="user-menu">
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">회원가입</a>
+                </li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <!--라지 슬라이드-->
+        <div class="main-carousel">
+            <!--슬라이드-->
+            <div class="mySlides">
+                <a href="#">
+                    <img src="https://www.bitcamp.co.kr/theme/basic/img/visual_ncloud_230512.jpg" alt="데브옵스 개발자 과정">
+                </a>
+            </div>
+
+            <div class="mySlides">
+                <a href="#">
+                    <img src="https://www.bitcamp.co.kr/theme/basic/img/visual10.jpg" alt="코로나 방역">
+                </a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+            <a class="next" onclick="plusSlides(+1)">&gt;</a>
+        </div>
+    </header>
+
+    <!--메인 영역: 교육과정(카드형) + 채용공고(테이블)-->
+    <main>
+        <!--모집중인 교육과정(카드 레이아웃)-->
+        <section class="card-section">
+            <!--제목이랑 더보기 + 카드영역-->
+            <div class="main-card">
+                <!--제목 + 더보기 영역-->
+                <div class="card-title">
+                    <h3>모집중인 교육과정</h3>
+                    <a href="#">
+                        <img src="https://bitcamp.co.kr/theme/basic/skin/latest/pic_class/more.jpg" alt="더보기 버튼">
+                    </a>
+                </div>
+
+                <!--카드 레이아웃 영역-->
+                <div class="card-wrap">
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_jbtKFG2B_4bebb66ecfcf7e92c0ba33573b066caa62a5ab63_380x200.png" alt="데브옵스 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_kigoXx5O_81e491a436e3a7c8e5c4e9104ba690e73b0f507e_380x200.png" alt="AWS 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_jbtKFG2B_4bebb66ecfcf7e92c0ba33573b066caa62a5ab63_380x200.png" alt="데브옵스 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_jbtKFG2B_4bebb66ecfcf7e92c0ba33573b066caa62a5ab63_380x200.png" alt="데브옵스 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_jbtKFG2B_4bebb66ecfcf7e92c0ba33573b066caa62a5ab63_380x200.png" alt="데브옵스 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+
+                    <!--교육과정 하나에 대한 카드-->
+                    <div class="card">
+                        <!--카드 헤더: 강의 이미지-->
+                        <div class="card-header">
+                            <img src="https://bitcamp.co.kr/data/file/class/thumb-3731540291_jbtKFG2B_4bebb66ecfcf7e92c0ba33573b066caa62a5ab63_380x200.png" alt="데브옵스 개발자 과정">
+                        </div>
+
+                        <!--카드 콘텐트: 강의 정보-->
+                        <div class="card-content">
+                            <!--카드 콘텐트 헤더: 강의 제목-->
+                            <div class="card-content-title">
+                                <p>클라우드 기반 웹 데브옵스 개발자 과정</p>
+                            </div>
+
+                            <!--카드 콘텐트 요약: 강의 정보-->
+                            <div class="card-content-short">
+                                <pre>개강일     |  2023-05-31</pre>
+                                <pre>교육기간   |  2023-05-31 ~ 2023-12-07</pre>
+                            </div>
+
+                            <!--자세히 보기-->
+                            <a href="#" class="lecture-detail">자세히보기+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--채용공고(테이블)-->
+        <section class="table-section">
+            <!--테이블 영역: 테이블 헤더(채용공공, 더보기 버튼) + 테이블 콘텐트-->
+            <div class="main-table">
+                <!--제목부분: 제목 + 더보기 버튼-->
+                <div class="table-title">
+                    <h3>채용공고</h3>
+                    <a href="#">
+                        <img src="https://bitcamp.co.kr/theme/basic/skin/latest/pic_class/more.jpg" alt="더보기 버튼">
+                    </a>
+                </div>
+
+                <!--테이블영역: 채용공고 리스트-->
+                <div class="table-wrap">
+                    <table class="job-table">
+                        <thead>
+                            <tr>
+                                <th class="job-table-th">회사명</th>
+                                <th class="job-table-th">포지션</th>
+                                <th class="job-table-th">게시일</th>
+                                <th class="job-table-th">마감일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="job-detail" onclick="location.href='#'">
+                                <td class="job-table-td">아이지니 주식회사</td>
+                                <td class="job-table-td">CloudManagement와 개발</td>
+                                <td class="job-table-td">2023-05-12</td>
+                                <td class="job-table-td">2023-06-11</td>
+                            </tr>
+                            <tr class="job-detail" onclick="location.href='#'">
+                                <td class="job-table-td">아이지니 주식회사</td>
+                                <td class="job-table-td">CloudManagement와 개발</td>
+                                <td class="job-table-td">2023-05-12</td>
+                                <td class="job-table-td">2023-06-11</td>
+                            </tr>
+                            <tr class="job-detail" onclick="location.href='#'">
+                                <td class="job-table-td">아이지니 주식회사</td>
+                                <td class="job-table-td">CloudManagement와 개발</td>
+                                <td class="job-table-td">2023-05-12</td>
+                                <td class="job-table-td">2023-06-11</td>
+                            </tr>
+                            <tr class="job-detail" onclick="location.href='#'">
+                                <td class="job-table-td">아이지니 주식회사</td>
+                                <td class="job-table-td">CloudManagement와 개발</td>
+                                <td class="job-table-td">2023-05-12</td>
+                                <td class="job-table-td">2023-06-11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--푸터 영역: 사용자 방침 + 회사정보 + 로고 등등-->
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer-header">
+                <div class="footer-tel">
+                    비트캠프 대표문의
+                    <br>
+                    02 - 1111 - 1111
+                    <br>
+                    <br>
+                </div>
+                <div class="footer-branch">
+                    * 기존 수강생분들의 행정업무는 해당 센터로 문의 바랍니다.
+                    <br>
+                    <pre>강남본원    02. 1111. 1111     강남센터    02. 2222. 2222
+                    </pre>
+                    <br>
+                    평 일
+                    AM 09:30 ~ PM 18:00
+                </div>
+                <img src="https://bitcamp.co.kr/theme/basic/img/ft_icon1.png" alt="아이콘1">
+                <img src="https://bitcamp.co.kr/theme/basic/img/ft_icon2.png" alt="아이콘2">
+            </div>
+            <hr>
+            <div class="footer-content">
+                <div class="footer-address">
+                    비트캠프 | 서울 강남구 강남대로94길 20, 삼오빌딩(5층 ~ 7층) | 사업자등록번호 : 111-11-11111
+                    <br>
+                    (주)비트컴퓨터 강남본원 대표이사 : 조현정 | 문의 : 02-1111-1111 | 팩스 : 02.1111.1111
+                    <br>
+                    통신판매업 --------
+                </div>
+                <img src="https://bitcamp.co.kr/theme/basic/img/bit_white_logo.png" alt="비트캠프 로고">
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-btn-wrap">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">찾아오시는길</a>
+                </div>
+                <div class="footer-copywrite">
+                    Copywrite (c) 비트캠프 All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

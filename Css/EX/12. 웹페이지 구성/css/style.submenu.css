@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* 1. 공통부분 작성 */
+html{
+    font-size: 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, sans-serif;
+    line-height: 1.7;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 2. 헤더 부분 */
+/* 헤더 위치 조정 */
+.page-header {
+    position: relative;
+
+}
+
+/* 로고 스타일 및 위치 */
+.logo-wrap {
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.menu-wrap {
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 1.25rem;
+
+}
+
+.main-menu li {
+    margin-left: 70px;
+    position: relative;
+    float: left;
+}
+
+/* 로그인,회원가입 스타일 및 위치 */
+.user-menu {
+    z-index: 2;
+    font-size: 0.75rem;
+    display: flex;
+    margin-top: 24px;
+}
+
+.user-menu li {
+    margin-left: 36px;
+}
+
+/* 헤더 안의 내용 정렬 */
+
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------------------------------------------------- */
+/* 3. 슬라이드 부분 */
+.main-carousel {
+    margin: 0 auto;
+    position: relative;
+    top: -65px;
+    z-index: 1;
+    width: 100%;
+}
+
+.main-carousel img {
+    width: 100%;
+}
+
+/* 4. 메인영역 */
+/* 4-1. 카드 레이아웃 영역 */
+.card-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 10px auto 20px;
+    color: black;
+}
+
+.card-title h3 {
+    display: inline-block;
+}
+
+.card-title a {
+    position: absolute;
+    right:0;
+}
+
+.card-wrap {
+    width: 100%;
+    margin-top: 20px;
+    /* 카드 목록 그리드 레이아웃으로 배치 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:10px
+
+}
+
+.card-header img {
+    width: 100%;
+}
+
+.card-content-title {
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card-content-short {
+    font-size: 0.9rem;
+
+}
+
+.lecture-detail {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    margin-top: 10px;
+    
+}
+
+/* 4-2. 채용공고 영역(테이블) */
+
+.table-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 70px auto 20px;
+    color: #000;
+}
+
+.table-title  h3 {
+    display: inline-block;
+}
+
+.table-title a {
+    position: absolute;
+    right: 0;
+}
+
+.job-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.job-table, .job-table th, .job-table td {
+    border: 1px solid #ccc;
+}
+
+.job-table-th {
+    background: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: center;
+}
+
+.job-table-td {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.job-detail {
+    cursor: pointer;
+}
+
+/* 푸터 영역 */
+.footer {
+    background: #1f1f27;
+}
+
+.footer-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    text-align: left;
+}
+
+.footer-tel {
+    font-size: 20px;
+}
+
+.footer-branch, .footer-address {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.footer-header img, .footer-content img {
+    float: right;
+}
+
+.footer-btn-wrap, .footer-copywrite {
+    display: inline-block;
+}
+
+.footer-btn-wrap a {
+    background: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.footer-copywrite {
+    float: right;
+}
+
+/* 6. 슬라이드 이전/다음 버튼 스타일 및 위치 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:  50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* 7. 슬라이드 관련 스타일 */
+.mySlides {
+    display: none;
+}
+
+/* 8. 서브메뉴 관련 스타일 */
+.lecture-submenu, .board-submenu {
+    display: none;
+    position: absolute;
+    color: #fff;
+    width: 130px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+.main-menu li ul a {
+    color: #fff;
+
+}
+
+.main-menu li:hover ul {
+    display: block;
+    font-size: 1rem;
+}

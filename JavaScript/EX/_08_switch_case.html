@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <a id="link" href="#">링크</a>
+    <script>
+        const aTag = document.getElementById("link");
+
+        const siteName = prompt("자주 접속하는 사이트는?");
+        let url;
+
+        switch(siteName) {
+            case "네이버":
+                url = "https://www.naver.com";
+                break;
+            case "구글":
+                url = "https://www.google.com";
+                break;
+            case "다음":
+                url = "https://www.daum.net";
+                break;
+            default:
+                alert("잘못 입력하셨습니다.");
+        }
+
+        aTag.href = url;
+        aTag.innerText = siteName;
+    </script>
+</body>
+</html>

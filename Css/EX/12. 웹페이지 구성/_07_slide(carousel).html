@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비트캠프</title>
     <link rel="stylesheet" href="./css/reset.min.css">
-    <link rel="stylesheet" href="./css/style_footer.css">
+    <link rel="stylesheet" href="./css/style_slide(carousel).css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/slide(carousel).js"></script>
 </head>
 <body>
     <!-- 헤더영역: 로고 + 메뉴 + 로그인 + 라지 -->
@@ -58,7 +60,14 @@
                 <a href="#">
                     <img src="https://www.bitcamp.co.kr/theme/basic/img/visual_ncloud_230512.jpg" alt="네이버 클라우드 기반 웹 데브옵스 개발자 과정 수강생 모집">
                 </a>
-            </div>          
+            </div>
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="https://www.bitcamp.co.kr/theme/basic/img/visual10.jpg" alt="네이버 클라우드 기반 웹 데브옵스 개발자 과정 수강생 모집">
+                </a>
+            </div>
+            <a href="#" class="prev" onclick="plusSlides(-1)">&lt;</a>
+            <a href="#" class="next" onclick="plusSlides(1)">&gt;</a>
         </div>
     </header>
     <!-- 메인 영역 : 교육과정(카드형) + 채용공고(테이블) -->
