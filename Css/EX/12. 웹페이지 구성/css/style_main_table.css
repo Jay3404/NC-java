@@ -138,3 +138,58 @@ ul {
     margin-top: 10px;
     
 }
+
+/* 4-2. 채용공고 영역(테이블) */
+
+.table-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 70px auto 20px;
+    color: #000;
+}
+
+.table-title  h3 {
+    display: inline-block;
+}
+
+.table-title a {
+    position: absolute;
+    right: 0;
+}
+
+.job-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.job-table, .job-table th, .job-table td {
+    border: 1px solid #ccc;
+}
+
+.job-table-th {
+    background: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: center;
+}
+
+.job-table-td {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.job-detail {
+    cursor: pointer;
+}

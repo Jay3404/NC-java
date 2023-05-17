@@ -82,3 +82,7 @@ ul {
     z-index: 1;
     width: 100%;
 }
+
+.main-carousel img {
+    width: 100%;
+}
