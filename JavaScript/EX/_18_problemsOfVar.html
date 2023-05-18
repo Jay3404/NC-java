@@ -9,35 +9,19 @@
 <body>
     <script>
         //3. var 호이스팅
-        console.log(x);
+        x = 100;
 
-        var x = 1;
-        
-        if(true) {
-            //블록단위가 아니라서 위에서 선언한 x가 재선언된다.
-            var x = 100;
-        }
-
-        for(var i = 0; i < 10; i++) {
-
-        }
+        var x;
 
         console.log(x);
-        console.log(i);
 
-        //let은 블록단위
-        let y = 10;
+        //let 호이스팅 불가
 
-        if(true) {
-            let y = 20;
-        }
+        y = 200;
 
-        for(let j = 0; j < 10; j++) {
-
-        }
+        let y;
 
         console.log(y);
-        console.log(j);
     </script>
 </body>
 </html>

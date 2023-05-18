@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+</head>
+<body>
+    <script>
+        const answer = [];
+
+        for(let i = 0; i < 7; i++){
+
+            let ran = parseInt(Math.random() * 45 + 1);
+            answer.push(ran);
+
+            for(let j = 0; j < i; j++){
+                if((i != j) && (answer[i] == answer[j])){
+                    answer.pop();
+                    i--;
+                }
+            }
+        }
+
+        document.write(`<span>이번주 로또 당첨 번호는 : </span>`)
+        for(let i = 0; i < 6; i++){
+            document.write(`<span>${answer[i]}, </span>`)
+        }
+        document.write(`<span>보너스 번호 : ${answer[6]} </span>`)
+
+        //-----------------------------------------------------------------
+        const arr = [];
+
+        for(let i = 0; i < 6; i++){
+            let input = prompt(" 숫자를 6개 입력해주세요.");
+
+            if(parseInt(input) > 0 || parseInt(input) < 45){
+                arr.push(parseInt(input));
+            }
+
+            else {
+                alert("0 ~ 45 사이의 숫자로 입력해주세요.")
+                i--;
+            }
+
+            for(let j = 0; j < i; j++){
+                if((i != j) && (arr[i] == arr[j])){
+                    alert("중복된 숫자를 입력하지마세요.")
+                    arr.pop();
+                    i--;
+                }
+            }
+            
+        }
+
+        document.write(`<span>입력하신 번호는 : </span>`)
+        for(let i = 0; i < 6; i++){
+            document.write(`<span>${arr[i]}, </span>`)
+        }
+
+        let cot = 0;
+        let bonus = false;
+
+        for(let i = 0; i < 6; i ++){
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String 객체</title>
+</head>
+<body>
+    <script>
+        const str = "javascript와 java는 다른 언어입니다.";
+
+        //charAt
+        console.log(`chartAt(10) : ${str.charAt(10)}`);
+        //indexOf
+        console.log(`indexOf('와') : ${str.indexOf('와')}`);
+        //lastIndexOf
+        console.log(`lastIndexOf('java') : ${str.lastIndexOf('java')}`);
+        //substr
+        console.log(`substr(10, 3) : ${str.substr(10, 3)}`);
+        //substring
+        console.log(`substring(10, 14) : ${str.substring(10, 14)}`);
+        //replace/replaceAll
+        console.log(`replace('java', 'c') : ${str.replace('java', 'c')}`);
+        console.log(`replaceAll('java', 'c') : ${str.replaceAll('java', 'c')}`);
+        //split
+        const strArr = str.split(' ');
+        console.log(strArr);
+    </script>
+</body>
+</html>

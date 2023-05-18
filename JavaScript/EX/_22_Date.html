@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 객체</title>
+</head>
+<body>
+    <script>
+        //현재 날짜 객체 인스턴스화
+        const nowDate = new Date();
+        console.log(`현재 월 : ${nowDate.getMonth() + 1}`);
+        console.log(`현재 일 : ${nowDate.getDate()}`);
+        console.log(`현재 요일 : ${nowDate.getDay()}`);
+
+        //강의 시작일 객체 인스턴스화
+        const startDate = new Date(2023, 2, 10);
+        console.log(`강의시작 월 : ${startDate.getMonth() + 1}`);
+        console.log(`강의시작 일 : ${startDate.getDate()}`);
+        console.log(`강의시작 요일 : ${startDate.getDay()}`);
+
+        const lastDate = new Date(2023, 11, 31)
+
+        const timeDiff = lastDate - nowDate;
+
+        const result = Math.ceil(timeDiff / (1000 * 60 * 60 *24 ) )
+
+        console.log(`연말까지 남은 일자는 : ${result}`);
+    </script>
+</body>
+</html>

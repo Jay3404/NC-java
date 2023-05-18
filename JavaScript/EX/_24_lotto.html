@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또</title>
+</head>
+<body>
+    <script>
+        //7개의 로또 번호 담아줄 배열
+        const lotto = [];
+
+        for(let i = 0; i < 7; i++) {
+            lotto.push(Math.floor(Math.random() * 45 + 1));
+
+            //중복처리
+            for(let j = 0; j < i; j++) {
+                if(lotto[i] == lotto[j]) {
+                    i--;
+                    lotto.pop();
+                    break;
+                }
+            }
+        }
+
+        console.log(lotto);
+
+        let lottoNum = "";
+
+        for(let k = 0; k < lotto.length; k++) {
+            if(k == 6) {
+                lottoNum += `보너스 번호 : ${lotto[k]}`;
+            } else {
+                lottoNum += `${lotto[k]}, `;
+            }
+        }
+
+        document.write(`이번주 로또 당첨 번호는 : ${lottoNum}<br>`);
+
+        //사용자 입력 값 6회 받기
+        const userNum = [];
+
+        for(let l = 0; l < 6; l++) {
+            let num = prompt("1 ~ 45까지의 숫자중 하나를 입력하세요.");
+
+            userNum.push(num);
+
+            //1 ~ 45만 입력하도록
+            if(num < 1 || num > 45) {
+                userNum.pop();
+                l--;
+            } else {
+                //중복처리
+                for(let m = 0; m < l; m++) {
+                    if(userNum[l] == userNum[m]) {
+                        l--;
+                        userNum.pop();
+                        break;
+                    }
+                }
+            }
+        }
+
+        document.write(`이번 주 구매한 로또 번호 : ${userNum}<br>`);
+
+        //등수 지정
+        let cnt = 0;
+        let bonus = false;
+
+        for(let o = 0; o < lotto.length; o++) {
+            for(let p = 0; p < userNum.length; p++) {
+                if(lotto[o] == userNum[p]) {
+                    if(o == 6) {
+                        bonus = true;
+                    } else {
+                        cnt++;
+                    }
+                }
+            }
+        }
+
+        if(cnt == 6) {
+            document.write(`1등 당첨`);
+        } else if(cnt == 5) {
+            if(bonus) {
+                document.write(`2등 당첨`);
+            } else {
+                document.write(`3등 당첨`);
+            }
+        } else if(cnt == 4) {
+            document.write(`4등 당첨`);
+        } else if(cnt == 3) {
+            document.write(`5등 당첨`);
+        } else {
+            document.write(`꽝`);
+        }
+    </script>
+</body>
+</html>

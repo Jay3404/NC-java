@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        //자료형 구분없이 하나의 배열에 저장할 수 있다.
+        const arr1 = ['hello', 100, false, null, {a: 'a', b: 'b'}];
+
+        console.log(arr1);
+
+        //빈 배열로 선언 후 값을 채워 넣을 수도 있다. 배열의 길이가 가변적인 배열을 만들어서 사용할 수 있다.
+        const arr2 = [];
+        console.log(arr2);
+        arr2.push('a');
+        arr2.push('b');
+        console.log(arr2);
+    </script>
+</body>
+</html>

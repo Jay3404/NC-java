@@ -23,16 +23,16 @@
 <body>
     <div class="container"></div>
     <script>
-        const container = document.getElementsByClassName("container")[0]
+        const container = document.getElementsByClassName("container")[0];
 
         let strDiv = "";
 
-        for(let i = 0; i < 5; i++){
-            strDiv += `<div class='box' id=box${i}'></div>`
+        //for문은 태그의 유일한 아이디를 만들 때 자주 사용
+        for(let i = 0; i < 5; i++) {
+            strDiv += `<div class='box' id='box${i}'></div>`;
         }
 
         container.innerHTML = strDiv;
-
     </script>
 </body>
 </html>

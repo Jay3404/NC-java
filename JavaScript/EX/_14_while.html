@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>for</title>
-    <style>
-    </style>
+    <title>while</title>
 </head>
 <body>
-
     <script>
         //prompt로 사용자 입력값 받기
         //end면 종료
-        //아니면 parseInt로 숫자형으로 변경해서 합산
-        //계속 합산 값을 출력하도록
-        
+        //아니면 parseInt로 숫자형으로 변경해서 합산 
+        //합산값을 계속 출력
+        //document.write + br 출력
+        let sum = 0;
 
-        let answer = 0;
-        let input = "";
+        while(true) {
+            let input = prompt("숫자나 end를 입력하세요.");
 
-        while(input != "end"){
-            input = prompt("숫자를 입력해주세요.(종료 : end)");
-            
-            if(input != 'end'){
-                document.write(`<span>${answer} + ${input} =</span>`)
-                answer += parseInt(input);
-                document.write(`<span>${answer}</span><br>`)
+            if(input === "end") {
+                break;
             }
 
-
+            sum += parseInt(input);
+            document.write(`현재 합은 : ${sum}<br>`);
         }
-
     </script>
 </body>
 </html>

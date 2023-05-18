@@ -10,18 +10,15 @@
     <script>
         //1~100까지 2와 3의 공배수 모두 출력
         //document.write로 화면에 출력
-        //br태그로 하나찍고 엔터값 입력
+        //br태그로 하나 찍고 엔터값 입력
+        let num = 1;
 
-        let i = 1;
-
-        while(i <= 100) {
-            if(i % 2 == 0 && i % 3 == 0){
-                document.write(`<span>${i}</span><br>`)
+        while(num <= 100) {
+            if(num % 2 == 0 && num % 3 == 0) {
+                document.write(`${num}<br>`);
             }
-            i++;
+            num++;
         }
-        
-
     </script>
 </body>
 </html>

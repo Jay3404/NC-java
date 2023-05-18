@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+<body>
+    <script>
+        const num = 10;
+        //num = 20;
+
+        //const 객체나 배열의 요소는 바꿀수 있다.
+        //객체와 배열이 참조변수라서 요소들에 대한 내용은 변경 가능
+        const arr = [1, 3, 3, 4, 5];
+        const obj = {
+            a: 'a',
+            b: 'c',
+            c: 'c'
+        };
+
+        arr[1] = 2;
+        obj.b = 'b';
+
+        console.log(arr);
+        console.log(obj);
+        
+        //객체, 배열은 대부분 const로 선언, 태그를 변수에 담아서 쓸때도 const로 선언, 변수를 선언할 때 변하지 않는 값일 때는 const로 선언
+
+        //연산이 일어나서 변하는 값일 때는 let으로 선언
+    </script>
+</body>
+</html>

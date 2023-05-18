@@ -38,22 +38,23 @@
     <script>
         const btn = document.getElementById("btnStart");
 
+        //btnStart 버튼 클릭시 동작
         btn.addEventListener('click', function() {
-            const images = document.getElementsByClassName('banner');
+            const images = document.getElementsByClassName("banner");
 
-            for(let i = 0; i < images.length; i++){
-                let left = (i % 4) * 200;
+            for(let i = 0; i < images.length; i++) {
+                //200씩 증가
+                let left = ((i % 3) + 1) * 200;
+                
+                //200씩 증가
+                let top = (parseInt(i / 3) + 1) * 200;
 
-                let top = parseInt(i/4) * 200;
+                console.log(`left: ${left}, top: ${top}`);
 
                 images[i].style.left = left + 'px';
                 images[i].style.top = top + 'px';
             }
-
-
-
         });
-
     </script>
 </body>
 </html>
