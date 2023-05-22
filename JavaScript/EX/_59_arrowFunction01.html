@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6의 화살표 함수</title>
+</head>
+<body>
+    <script>
+        //ES5
+        function add1(a, b) {
+            return a + b;
+        }
+
+        //ES6
+        const add2 = (a, b) => {
+            return a + b;
+        };
+        //리턴문은 소괄호로 대체 가능
+        const add3 = (a, b) => (
+            a + b
+        );
+
+        const returnFunc = a => {
+            return a;
+        }
+
+        //리턴될 대상이 연산이 필요없는 대상일 경우 소괄호 생략가능
+        const returnFunc2 = a => a;
+
+
+        //화살표 함수의 사용은 변수명을 이용해서 사용한다.
+        console.log(add3(10, 20));
+        console.log(returnFunc2(100));
+
+
+    </script>
+</body>
+</html>

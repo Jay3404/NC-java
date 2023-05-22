@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수는 생성자로 사용 불가능</title>
+</head>
+<body>
+    <script>
+        //ES5 생성자 함수
+        function Tv(price, color) {
+            this.price = price;
+            this.color = color;
+        }
+
+        var tv = new Tv(1000000, "red");
+
+        //ES6 화살표 함수
+        //화살표 함수는 생성자로 사용불가능
+        const Car = (price, color) => {
+            this.price = price;
+            this.color = color;
+        }
+
+        const car = new Car(1000000000, 'black');
+
+        console.log(tv);
+        console.log(car);
+    </script>
+</body>
+</html>

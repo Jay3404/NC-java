@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+     <script>
+        const add = (...rest) => {
+            console.log(rest);
+            let sum = 0;
+
+            for(let i = 0; i < rest.length; i++) {
+                sum += rest[i];
+            }
+            console.log(sum);
+        }
+
+        add(1, 2, 3, 4, 5);
+
+        //파라미터중 원하는 개수만 변수로 받고 나머지는 rest parameter로 받기
+        const mul = (num1, num2, ...rest) => {
+            let result = 1;
+
+            console.log(num1);
+            console.log(num2);
+            console.log(rest);
+
+            for(let i = 0; i < rest.length; i++) {
+                result *= rest[i];
+            }
+            console.log(result);
+        }
+
+        mul(300, 4, 7, 10, 9, 8);
+     </script>
+</body>
+</html>

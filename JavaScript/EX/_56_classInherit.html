@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class의 상속</title>
+</head>
+<body>
+    <script>
+        class Tv {
+            constructor(price, color, company, resolution) {
+                this.price = price;
+                this.color = color;
+                this.company = company;
+                this.resolution = resolution;
+            }
+            turnOn() {
+                console.log(`Tv를 켠다`);
+            }
+            turnOff() {
+                console.log(`Tv를 끈다`);
+            }
+            info() {
+                console.log(`price: ${this.price}`);
+                console.log(`color: ${this.color}`);
+                console.log(`company: ${this.company}`);
+                console.log(`resolution: ${this.resolution}`);
+            }
+        }
+
+        //Tv를 상속받은 LgTv
+        class LgTv extends Tv {
+            //생성자함수를 생략하면 부모의 생성자 함수 호출
+            // constructor(...args) {
+            //     super(...args);
+            // }
+            volumeUp() {
+                console.log(`소리를 키운다`);
+            }
+            volumeDown() {
+                console.log(`소리를 줄인다`);
+            }
+        }
+
+        const lgTv = new LgTv(100000, 'black', '엘지', 'UHD');
+
+        //부모의 메소드 사용
+        lgTv.info();
+
+        lgTv.volumeUp();
+
+        //객체의 타입 확인
+        console.log(lgTv instanceof LgTv);
+        console.log(lgTv instanceof Tv);
+    </script>
+</body>
+</html>

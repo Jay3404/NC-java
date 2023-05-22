@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수를 통한 상속</title>
+</head>
+<body>
+    <script>
+        function Parent(height, hairColor, bloodType) {
+            this.height = height;
+            this.hairColor = hairColor;
+            this.bloodType = bloodType;
+        }
+
+        //생성자 함수를 통한 상속
+        class Child extends Parent {
+            constructor(weight, ...args) {
+                super(...args);
+                this.weight = weight;
+            }
+        }
+
+        const child = new Child('65kg', '170cm', 'black', 'A');
+
+        console.log(child.height);
+        console.log(child.hairColor);
+        console.log(child.bloodType);
+        console.log(child.weight);
+    </script>
+</body>
+</html>
