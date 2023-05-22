@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수</title>
+</head>
+<body>
+    <script>
+        function car(color, price, company) {
+            this.color = color;
+            this.price = price;
+            this.company = company;
+            this.info = function() {
+                console.log(`car 색상: ${this.color}`);
+                console.log(`car 가격: ${this.price}`);
+                console.log(`car 회사: ${this.company}`);
+            }
+        }
+
+        const kiaCar = new car("red", 30000000, "기아");
+        kiaCar.info();
+
+        const hyundaiCar = new car('black', 50000000, "현대");
+        hyundaiCar.info();
+
+        console.log(kiaCar);
+        console.log(hyundaiCar);
+    </script>
+</body>
+</html>

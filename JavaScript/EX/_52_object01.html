@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 축약표현</title>
+</head>
+<body>
+    <script>
+        //ES5
+        var kiaCar = {
+            price: 10000000,
+            color: 'red',
+            company: 'kia'
+        };
+
+        console.log(kiaCar);
+
+        //ES6의 속성 축약표현
+        //변수명이 속성키로 값이 속성값으로 자동 할당
+        let price = 20000000;
+        let color = 'black';
+        let company = 'hyundai';
+
+        const hyundaicar = {price, color, company};
+        console.log(hyundaicar);
+    </script>
+</body>
+</html>

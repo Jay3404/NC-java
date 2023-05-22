@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즉시 실행 함수</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        (function(color, marginL) {
+            const box = document.getElementsByClassName("box")[0];
+
+            box.style.background = color;
+            box.style.marginLeft = marginL;
+        })("red", "200px");
+    </script>
+</body>
+</html>

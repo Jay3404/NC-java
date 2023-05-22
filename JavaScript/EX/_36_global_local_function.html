@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역함수와 지역함수</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.getElementsByClassName("box")[0];
+
+        //전역함수 선언
+        //어디서든지 호출 가능
+        function move() {
+            //지역함수 선언
+            //선언된 코드블록(중괄호 블록)안에서만 호출가능
+            function changeColor1() {
+                box.style.background = 'red';
+            }
+
+            box.style.marginLeft = '200px';
+            changeColor1();
+        }
+
+        (function() {
+            //즉시 실행 함수 안의 지역함수라도 즉시 실행되지 않고 함수 호출 구문을 만들어줘야 지역함수가 실행된다.
+            function changeColor2() {
+                box.style.background = 'black';
+            }
+
+            changeColor2();
+        })();
+
+        move();
+    </script>
+</body>
+</html>

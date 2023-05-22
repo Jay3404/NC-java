@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6에서 도입된 class</title>
+</head>
+<body>
+    <script>
+        class Car {
+            //생성자 함수 정의
+            constructor(price, color, model, company) {
+                //속성 생성 및 초기화
+                this.price = price;
+                this.color = color;
+                this.model = model;
+                this.company = company;
+            }
+
+            //일반 메소드(프로토타입 메소드)
+            carInfo() {
+                console.log(this.price);
+                console.log(this.color);
+                console.log(this.model);
+                console.log(this.company);
+            }
+
+            //정적 메소드
+            //객체 생성없이도 사용가능한 메소드
+            static info(price, color, model, company) {
+                console.log(price);
+                console.log(color);
+                console.log(model);
+                console.log(company);
+            }
+        }
+
+        //인스턴스화(객체 생성)
+        const hyundaiCar = new Car(20000000, 'black', '아반떼', '현대');
+
+        //프로토타입 메소드의 사용
+        hyundaiCar.carInfo();
+
+        //속성값 변경 및 사용
+        hyundaiCar.price = 3000000;
+        console.log(hyundaiCar.model);
+        hyundaiCar.carInfo();
+
+        //정적메소드 사용
+        Car.info(50000000, 'red', '제네시스', '현대');
+    </script>
+</body>
+</html>

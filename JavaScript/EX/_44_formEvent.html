@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 이벤트</title>
+    <style>
+        .pwTxt {
+            color: red;
+            font-size: 0.75rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="loginForm">
+        <div>
+            <label>아이디
+                <input type="text" id="userId">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호
+                <input type="password"
+                id="userPw">
+            </label>
+            <p class="pwTxt">비밀번호는 특수문자, 숫자, 영문자 조합의 8자리 이상으로 지정하세요.</p>
+        </div>
+        <input type="submit" value="회원가입">
+    </form>
+    <script>
+        const userIdInput = document.querySelector("#userId");
+        const userPwInput = document.querySelector("#userPw");
+
+        let userIdValidate = false;
+        let userPwValidate = false;
+
+        //change는 포커스가 빠져나간 뒤 동작하기 때문에 blur와 비슷하게 동작
+        userIdInput.addEventListener("blur", (e) => {
+            if(e.target.value.length < 8 || e.target.value.length < 20) {
+                alert("아이디는 8자 이상 20자 이하로 지정해주세요.");
+                return;
+            }
+
+            userIdValidate = true;
+        });
+
+        userPwInput.addEventListener("blur", (e) => {
+            let reg = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/;
+            const pwTxt = document.querySelector(".pwTxt");
+
+            if(!reg.test(e.target.value)) {
+                // alert("비밀번호는 특수문자, 영문자, 숫자 조합의 8자리 이상으로 지정하세요.");
+                pwTxt.style.display = "block";
+                //강제 포커스
+                e.target.focus();
+                return;
+            }
+
+            pwTxt.style.display = "none";
+            userPwValidate = true;
+        });
+
+        const form = document.querySelector("#loginForm");
+
+        form.addEventListener("submit", (e) => {
+            //서브밋되기전 처리할 내용을 지정
+            if(!userIdValidate) {
+                alert("아이디를 다시 입력하세요.");
+                return;
+            }
+
+            if(!userPwValidate) {
+                alert("비밀번호를 다시 입력하세요.");
+                return;
+            }
+        });
+
+        userIdInput.addEventListener("keydown", (e) => {
+            //사용자가 enter 눌렀을 때
+            if(e.keyCode == 13) {
+                if(userIdInput.value == '') {
+                    alert("아이디를 입력하세요.");
+                    return;
+                }
+
+                if(userPwInput.value == '') {
+                    alert("비밀번호를 입력하세요.");
+                    return;
+                }
+
+                //강제 이벤트 발생
+                const form = document.querySelector("#loginForm");
+                form.submit();
+            }
+        });
+
+        userPwInput.addEventListener("keydown", (e) => {
+            //사용자가 enter 눌렀을 때
+            if(e.keyCode == 13) {
+                if(userIdInput.value == '') {
+                    alert("아이디를 입력하세요.");
+                    return;
+                }
+
+                if(userPwInput.value == '') {
+                    alert("비밀번호를 입력하세요.");
+                    return;
+                }
+
+                //강제 이벤트 발생
+                const form = document.querySelector("#loginForm");
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>

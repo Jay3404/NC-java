@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    <button type="button" onclick="clearInterval(interval)">인터벌 종료</button>
+    <h1 class="time"></h1>
+    <script>
+        let hour = 0;
+        let minute = 0;
+        let second = 0;
+
+        let interval = setInterval(() => {
+            second++;
+            
+            if(second >= 60) {
+                second = 0;
+                minute++;
+            }
+
+            if(minute >= 60) {
+                minute = 0;
+                hour++;
+            }
+
+            let hourtxt = "";
+            let minutetxt = "";
+            let secondtxt = "";
+
+            if(hour < 10)
+                hourtxt = "0" + hour;
+            else 
+                hourtxt = hour;
+
+            if(minute < 10)
+                minutetxt = "0" + minute;
+            else
+                minutetxt = minute;
+
+            if(second < 10)
+                secondtxt = "0" + second;
+            else
+                secondtxt = second;
+                 
+            const timeTag = document.getElementsByClassName("time")[0];          
+
+            timeTag.innerText = `${hourtxt}:${minutetxt}:${secondtxt}`;
+        }, 1000);
+    </script>
+</body>
+</html>

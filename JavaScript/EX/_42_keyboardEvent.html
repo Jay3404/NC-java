@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 이벤트</title>
+</head>
+<body>
+    <form action="" id="loginForm">
+        <div>
+            <label>아이디
+                <input type="text" id="userId">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호
+                <input type="password"
+                id="userPw">
+            </label>
+        </div>
+        <input type="submit" value="로그인">
+    </form>
+    <script>
+        const userIdInput = document.querySelector("#userId");
+        const userPwInput = document.querySelector("#userPw");
+
+        userIdInput.addEventListener("keydown", (e) => {
+            //사용자가 enter 눌렀을 때
+            if(e.keyCode == 13) {
+                if(userIdInput.value == '') {
+                    alert("아이디를 입력하세요.");
+                    return;
+                }
+
+                if(userPwInput.value == '') {
+                    alert("비밀번호를 입력하세요.");
+                    return;
+                }
+
+                //강제 이벤트 발생
+                const form = document.querySelector("#loginForm");
+                form.submit();
+            }
+        });
+
+        userPwInput.addEventListener("keydown", (e) => {
+            //사용자가 enter 눌렀을 때
+            if(e.keyCode == 13) {
+                if(userIdInput.value == '') {
+                    alert("아이디를 입력하세요.");
+                    return;
+                }
+
+                if(userPwInput.value == '') {
+                    alert("비밀번호를 입력하세요.");
+                    return;
+                }
+
+                //강제 이벤트 발생
+                const form = document.querySelector("#loginForm");
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>

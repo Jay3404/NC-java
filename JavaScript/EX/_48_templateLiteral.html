@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>템플릿 리터럴</title>
+</head>
+<body>
+    <script>
+        //백틱을 이용한 템플릿 리터럴 선언
+        const str1 = `템플릿 리터럴은 백틱을 이용한 문자열입니다.`;
+
+        const num1 = 10;
+        const num2 = 20;
+
+        //기존 ES5에서의 표현식 삽입
+        var str2 = num1 + " + " + num2 + " = " + (num1 + num2);
+
+        //템플릿 리터럴에서의 표현식 삽입
+        const str3 = `${num1} + ${num2} = ${num1 + num2}`;
+
+        //기존 ES5에서의 멀티라인 문자열
+        //이스케이프 문자를 사용해서 만든다.
+        var str4 = "기존 문자열 \n입니다.";
+
+        //템플릿 리터럴은 기본적으로 멀티라인을 지원한다.
+        const str5 = `템플릿 문자열 
+        입니다.`;
+
+        console.log(`str1 => ${str1}`);
+        console.log(`str2 => ${str2}`);
+        console.log(`str3 => ${str3}`);
+        console.log(`str4 => ${str4}`);
+        console.log(`str5 => ${str5}`);
+    </script>
+</body>
+</html>

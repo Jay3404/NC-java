@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단축평가</title>
+</head>
+<body>
+    <script>
+        const objArr = [
+            {
+                num: 1
+            },
+            {
+                num: 2
+            },
+            {
+                num: 3
+            }
+        ];
+
+        // document.write(objArr[2] || `해당 데이터가 존재하지 않습니다.`);
+        for(let i = 0; i < objArr.length; i++) {
+            document.write((objArr[i] && objArr[i].num) + "<br>");
+        }
+    </script>
+</body>
+</html>

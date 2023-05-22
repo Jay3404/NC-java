@@ -20,11 +20,14 @@
         console.log(`강의시작 일 : ${startDate.getDate()}`);
         console.log(`강의시작 요일 : ${startDate.getDay()}`);
 
-        const lastDate = new Date(2023, 11, 31)
+        //2. 연말까지 남은 일자
+        const lastDay = new Date(2023, 11, 31);
 
-        const timeDiff = lastDate - nowDate;
+        //계산된 결과가 밀리초 단위로 리턴
+        const timeDiff = lastDay - nowDate;
 
-        const result = Math.ceil(timeDiff / (1000 * 60 * 60 *24 ) )
+        //밀리초를 일로 변환 -> 밀리초값 / 1000 -> / 60 -> / 60 -> / 24 -> 밀리초값 / (1000 * 60 * 60 * 24)
+        const result = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
         console.log(`연말까지 남은 일자는 : ${result}`);
     </script>

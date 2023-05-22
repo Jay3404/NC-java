@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표함수</title>
+</head>
+<body>
+    <script>
+        //중복된 이름의 매개변수
+        function add1(a, a) {
+            return a + a;
+        }
+
+        const add2 = (a, b) => {
+            return a + b;
+        }
+
+        console.log(add1(10, 20));
+        console.log(add2(10, 20));
+
+        //프로토타입이 생성되는지 여부 비교
+        console.log(add1.hasOwnProperty('prototype'));
+        console.log(add2.hasOwnProperty('prototype'));
+
+    </script>
+</body>
+</html>

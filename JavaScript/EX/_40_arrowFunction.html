@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표함수</title>
+</head>
+<body>
+    <button type="button">클릭</button>
+    <script>
+        let cnt = 0;
+
+        const btn = document.querySelector("button");
+
+        //e는 event객체로 클릭이벤트 자체를 객체로 담아서 가져옴
+        btn.addEventListener('click', e => {
+            console.log(e);
+            //this를 사용시 이벤트가 발생한 객체를 가져오는데
+            //화살표 함수에서는 this가 사용불가이므로 e로 이벤트가 발생한 객체를 지칭해야한다.
+            console.log(e.target);
+
+            cnt++;
+            e.target.innerText = `클릭한 횟수: ${cnt}`;
+        });
+    </script>
+</body>
+</html>

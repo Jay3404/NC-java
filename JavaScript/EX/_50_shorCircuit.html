@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단축평가</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button type="button" id="btn">색상변경</button>
+    <script>
+        const isDone = true;
+        let message = '';
+
+        message = isDone && '성공';
+        console.log(message);
+
+        let isClick = false;
+
+        const btn = document.querySelector("#btn");
+        const box = document.querySelector(".box");
+
+        btn.addEventListener('click', () => {
+            isClick = !isClick;
+            
+            if(isClick) {
+                //isClick이 true일 때는 변경
+                //isClick이 false일 때는 false
+                const message2 = isClick && '변경';
+                box.style.background = "blue";
+                
+                alert(message2);
+                return;
+            }
+
+            box.style.background = "red";
+            //isClick이 true일 때는 true
+            //isClick이 false일 때는 원복
+            const message3 = isClick || '원복';
+            alert(message3);
+        });
+
+    </script>
+</body>
+</html>

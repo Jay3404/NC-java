@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        button {
+            position: absolute;
+            top: 120px;
+        }
+
+        #stopBtn {
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button type="button" id="startBtn" onclick="startInterval()">인터벌시작</button>
+    <button type="button" id="stopBtn"  onclick="clearInterval(interval)">인터벌종료</button>
+    <script>
+        //1초마다 box를 왼쪽으로 20px씩 이동
+        let left = 0;
+        let interval;
+
+        const startInterval = () => {
+            interval = setInterval(() => {
+                left += 20;
+
+                const box = document.getElementsByClassName('box')[0];
+
+                box.style.left = `${left}px`;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

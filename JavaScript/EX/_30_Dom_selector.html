@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 선택자</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div id="box1"></div>
+    <div id="box2">
+        <input type="text" name="id">
+        <input type="text" name="pw">
+    </div>
+    <script>
+        const box = document.getElementsByClassName('box');
+        console.log(box);
+
+        const box1 = document.getElementById('box1');
+        console.log(box1);
+
+        const box1q = document.querySelector("#box1");
+        console.log(box1q);
+
+        const idInput = document.querySelector("input[name='id']");
+        console.log(idInput);
+    </script>
+</body>
+</html>

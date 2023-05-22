@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메소드(함수)</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button type="button" onclick="changeColor();">색상변경</button>
+    <script>
+        function changeColor() {
+            //사용자가 영문 색상 입력시 그 색상으로 변경
+            const userColor = prompt("변경하고 싶은 색상을 영문으로 입력하세요.");
+
+            const box = document.getElementsByClassName("box")[0];
+
+            box.style.background = userColor;
+        }
+    </script>    
+</body>
+</html>

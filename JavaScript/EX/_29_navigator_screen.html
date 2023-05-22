@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator, Screen</title>
+</head>
+<body>
+    <script>
+        //사용자 os정보 받아오기
+        const info = navigator.userAgent.toLocaleLowerCase();
+
+        if(info.indexOf('windows') >= 0) {
+            alert("윈도우");
+        } else if(info.indexOf('macintosh') >= 0) {
+            alert("맥OS");
+        } else if(info.indexOf('adroid') >= 0) {
+            alert("안드로이드");
+        } else if(info.indexOf('iphone') >= 0) {
+            alert("ios");
+        }
+
+        //모니터의 가로길이, 세로길이(해상도 px단위로 가져옴)
+        const scr = screen;
+        const scrWidth = scr.width;
+        const scrHeight = scr.height;
+
+        console.log(`모니터의 가로 길이: ${scrWidth}`);
+        console.log(`모니터의 세로 길이: ${scrHeight}`);
+    </script>
+</body>
+</html>

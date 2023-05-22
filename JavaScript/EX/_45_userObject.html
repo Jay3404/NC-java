@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정의 객체</title>
+</head>
+<body>
+    <script>
+        //사용자 정의 객체 생성방식 1
+        //new Object()를 이용한 방식
+        const tv = new Object();
+
+        //객체의 속성값 대입
+        tv.color = "white";
+        tv.price = 1000000;
+
+        //객체의 기능 생성
+        tv.info = function() {
+            console.log(`tv 색상: ${this.color}`);
+            console.log(`tv 가격: ${this.price}`);
+        }
+
+        //사용자 정의 객체 생성방식2
+        //중괄호블록으로 객체 생성 방식
+        const car = {
+            color: "red",
+            price: 30000000,
+            info: function() {
+                console.log(`car 색상: ${this.color}`);
+                console.log(`car 가격: ${this.price}`);
+            }
+        }
+
+        //객체의 기능을 사용
+        tv.info();
+        car.info();
+
+        //객체의 속성값 변경
+        car.color = "black";
+        car.price = 50000000;
+
+        car.info();
+
+        //객체의 새로운 속성 및 기능 추가
+        car.company = "현대";
+        car.info2 = function() {
+            console.log(`car 색상: ${this.color}`);
+            console.log(`car 가격: ${this.price}`);
+            console.log(`car 회사: ${this.company}`);
+        }
+        
+        car.info2();
+        // $.ajax({
+        //     url: '',
+        //     type: '',
+        //     contentType: '',
+        //     data: {},
+        //     success: function(res) {
+
+        //     }
+        // });
+    </script>
+</body>
+</html>

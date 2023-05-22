@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수</title>
+</head>
+<body>
+    <script>
+        function car(color, price, company) {
+            this.color = color;
+            this.price = price;
+            this.company = company;
+            //프로토타입에 메소드 등록
+            //프로토타입에 등록된 메소드는 한 번만 생성되고 객체 생성때마다 생성되지 않는다.
+            //프로토타입에 메소드 등록 시에는 this 사용불가
+            //프로토타입에 메소드 등록시에는 생성자 메소드 이름이나 객체 이름을 직접 사용
+            car.prototype.info = function() {
+                console.log(`car 색상: ${this.color}`);
+                console.log(`car 가격: ${this.price}`);
+                console.log(`car 회사: ${this.company}`);
+            }
+        }
+
+        const kiaCar = new car("red", 30000000, "기아");
+        kiaCar.info();
+
+        const hyundaiCar = new car('black', 50000000, "현대");
+        hyundaiCar.info();
+
+        console.log(kiaCar);
+        console.log(hyundaiCar);
+    </script>
+</body>
+</html>

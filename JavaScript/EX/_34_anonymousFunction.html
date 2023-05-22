@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익명함수</title>
+</head>
+<body>
+    <script>
+        
+        //익명함수
+        //변수명으로 함수 호출
+        const add = function(a, b) {
+            return a + b; 
+        }
+        
+        //화살표함수
+        //화살표함수도 익명함수의 일종으로 호이스팅을 지원하지 않는다.
+        const arrowFunc = (a, b) => {
+            return a * b;
+        } 
+        
+        //호이스팅을 지원하지 않음
+        console.log(arrowFunc(10, 20));
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표함수</title>
+</head>
+<body>
+    <script>
+        const obj1 = {
+            num: 1,
+            increase: function() {
+                return ++this.num;
+            }
+        };
+
+        console.log(obj1.increase());
+
+        //화살표 함수는 this객체의 사용이나 바인딩이 불가능해서 이 객체 안의 num을 접근할 수 없다.
+        // const obj2 = {
+        //     num: 1,
+        //     increase: () => {
+        //         return ++this.num;
+        //     }
+        // }
+
+        const obj2 = {
+            num: 1,
+            increase: (a) => {
+                return ++a;
+            }
+        }
+
+        console.log(obj2.increase(obj2.num));
+    </script>
+</body>
+</html>

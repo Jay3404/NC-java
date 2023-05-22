@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+</head>
+<body>
+    <script>
+        //화살표 함수의 정의
+        const add = (a, b) => {
+            console.log(a + b);
+        }
+
+        //중괄호 대신 소괄호를 쓰면 결과가 리턴됨
+        const sub = (a, b) => (
+            a - b
+        );
+
+        //매개변수가 없는 화살표 함수
+        const mul = () => {
+            return 10 * 20;
+        }
+
+        //매개변수가 하나인 화살표 함수에서는 매개변수 부분에 소괄호를 생략가능
+        const div = a => {
+            console.log(100 / a);
+        }
+
+        add(10, 20);
+
+        const subRes = sub(20, 10);
+        console.log(subRes);
+        
+        const mulRes = mul();
+        console.log(mulRes);
+        
+        div(5);
+    </script>
+</body>
+</html>
