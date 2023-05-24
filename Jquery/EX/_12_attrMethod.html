@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="https://www.naver.com">네이버</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">구글</a>
+        </li>
+        <li>
+            <a href="https://www.daum.net">다음</a>
+        </li>
+    </ul>
+    <script>
+        let isChange = false;
+
+        const interval = setInterval(() => {
+            isChange = !isChange;
+
+            if(isChange) {
+                $("a[href='https://www.daum.net']").attr("href", "https://www.bitcamp.co.kr").text("비트캠프");
+
+                return;
+            }
+
+            $("a[href='https://www.bitcamp.co.kr']").attr("href", "https://www.daum.net").text("다음");
+        }, 1000);
+    </script>
+</body>
+</html>

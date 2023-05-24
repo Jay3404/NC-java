@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스프레드 문법</title>
+</head>
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+
+        console.log(arr);
+        console.log(...arr);
+
+        //객체는 스프레드 문법을 사용할 수 없다.
+        const obj = [{
+                id:1,
+                name: '홍길동'
+            },
+            {
+                id : 2,
+                name : '임꺽정'
+            }
+        ];
+
+        const obj2 = [
+            ...obj,
+            {id : 3,
+            year : 4}
+        ];
+
+        console.log(...obj2);
+
+        //스프레드 문법의 결과를 변수로 담을수도 없다.
+        // const convertArr = ...arr;
+
+        let max = Math.max(...arr);
+        console.log(max);
+
+        //서로 다른 두 개 이상의 배열을 합칠 때 주로 많이 사용된다.
+        //ES5
+        var newArr1 = arr.concat([6, 7]);
+
+        //ES6
+        const newArr2 = [...arr, ...[6, 7]];
+
+        console.log(newArr1);
+        console.log(newArr2);
+
+    </script>
+</body>
+</html>

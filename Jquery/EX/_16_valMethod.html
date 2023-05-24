@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>val()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <form id="loginForm" action="">
+        <div>
+            <label>아이디
+                <input type="text" id="userId" name="userId">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호
+                <input type="password" id="userPw" name="userPw">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호 확인
+                <input type="password" id="userPwChk" name="userPwChk">
+            </label>
+        </div>
+        <input type="submit" value="전송">
+    </form>
+    <script>
+        $("#loginForm").on("submit", (e) => {
+            //submit의 기본 기능을 방지
+            e.preventDefault();
+
+            const userId = $("#userId").val();
+            const userPw = $("#userPw").val();
+            const userPwChk = $("#userPwChk").val();
+
+            console.log(userId);
+            console.log(userPw);
+            console.log(userPwChk);
+
+            if(userId === 'aaa') {
+                alert('aaa는 사용할 수 없는 아이디입니다.');
+                return;
+            }
+
+            if(userPw !== userPwChk) {
+                alert("비밀번호와 비밀번호확인의 값이 서로 다릅니다.");
+                return;
+            }
+
+            $("#loginForm").submit();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        const map1 = new Map();
+        console.log(map1);
+
+        const map2 = new Map([['id', 1], ['name', '홍길동']]);
+        console.log(map2);
+
+        // const map3 = new Map([1, '홍길동']);
+        // console.log(map3);
+
+        //중복키값으로 맵 생성하면 밸류가 덮어써짐
+        const map4 = new Map([['id', 1], ['name', '홍길동'], ['name', '장길산']]);
+        console.log(map4);
+
+        //맵의 크기 확인 size
+        console.log(map2.size);
+
+        //size는 Map의 속성으로 잡히기 때문에 비구조화할당하여 변수로 받아올 수 있다.
+        const {size} = map2;
+        console.log(size);
+
+        //Map에 요소를 추가하는 set
+        map1.set('id', 1);
+        //set은 체이닝기법 지원
+        map1.set('name', '홍길동')
+            .set('major', '화학')
+            .set('year', 4);
+        console.log(map1);
+
+        //set도 중첩된 키로 값을 넣으면 마지막에 들어간 값으로 덮어써진다.
+        map1.set('major', '물리');
+        console.log(map1);
+
+        //객체의 키는 문자열만 지정가능
+        const kiaCar = {
+            price: 300000,
+            model: 'ev6',
+            company: 'kia'
+        };
+        const hyundaiCar = {
+            price: 400000,
+            model: '소나타',
+            company: 'hyundai'
+        };
+        const bmwCar = {
+            price: 400000,
+            model: '5시리즈',
+            company: 'bmw'
+        };
+
+        //Map의 키는 모든 값을 지정가능
+        const map5 = new Map();
+        map5.set(kiaCar, 'SUV')
+            .set(hyundaiCar, 'Sedan');
+
+        console.log(map5);
+
+        //밸류를 하나씩 꺼내오는 get
+        console.log(map5.get(kiaCar));
+
+        //지정하지 않은 키값으로 get을 하면 undefined가 리턴
+        console.log(map5.get(bmwCar));
+
+        //해당 키값으로 매핑된 밸류가 있는지 확인하는 has
+        console.log(map5.has(kiaCar));
+        console.log(map5.has(bmwCar));
+
+        
+    </script>
+</body>
+</html>

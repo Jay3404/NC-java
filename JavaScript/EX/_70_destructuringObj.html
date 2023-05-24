@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 비구조화 할당</title>
+</head>
+<body>
+    <script>
+        const car = {
+            price: 1000000,
+            color: 'red',
+            model: '아반떼',
+            company: '현대'
+        };
+
+        //객체 속성 비구조화 할당으로 받아오기
+        const {price, color, model, company} = car;
+
+        console.log(`가격: ${price}, 색상: ${color}, 모델: ${model}, 제조사: ${company}`);
+
+        //객체배열에서의 비구조화 할당
+        const carArr = [
+            {
+                id: 1,
+                price: 1000000,
+                color: 'red',
+                model: '아반떼',
+                company: '현대'
+            },
+            {
+                id: 2,
+                price: 3000000,
+                color: 'white',
+                model: '소나타',
+                company: '현대'
+            },
+            {
+                id: 3,
+                price: 5000000,
+                color: 'gray',
+                model: 'k9',
+                company: '기아'
+            },
+            {
+                id: 4,
+                price: 6000000,
+                color: 'black',
+                model: '제네시스',
+                company: '현대'
+            },
+        ];
+
+        const [car1, car2, car3, ...rest] = carArr;
+        
+        console.log(car1);
+        console.log(car2);
+        console.log(car3);
+        console.log(rest);
+
+        //특정 객체의 속성값만 비구조화할당
+        //두번째 객체의 id값만 추출
+        const [, {id}] = carArr;
+
+        console.log(id);
+
+        //중첩 객체에서의 비구조화 할당
+        const user = {
+            name: '홍길동',
+            address: {
+                city: '서울',
+                zipcode: 11111 
+            }
+        };
+
+        const {address: {city}} = user;
+        console.log(city);
+
+        //객체의 비구조화할당에서도 Rest파라미터 함께 사용가능
+        const loc = {
+            address: '서울시 서초구',
+            x: 90.4123,
+            y: 123.4589
+        }
+
+        //객체의 rest파라미터는 배열이 아닌 객체형태로 리턴된다.
+        const {address, ...r} = loc;
+        console.log(address);
+        console.log(r);
+    </script>
+</body>
+</html>

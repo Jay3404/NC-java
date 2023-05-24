@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before()/insertBefore()/after()/insertAfter()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li id="content">HTML/CSS</li>
+    </ul>
+    <script>
+        //1. before()
+        $("#content").before(`<li>Java</li>`);
+
+        //2. insertBefore()
+        $(`<li>Oracle</li>`).insertBefore("#content");
+
+        //3. after()
+        $("#content").after(`<li>Jquery</li>`);
+
+        //4. insertAfter()
+        $(`<li>JavaScript</li>`).insertAfter("#content");
+    </script>
+</body>
+</html>

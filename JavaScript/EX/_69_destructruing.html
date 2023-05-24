@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [31, 47, 80];
+
+        const add = ([num1, num2, num3]) => {
+            return num1 + num2 + num3;
+        }
+
+        const sum = add(arr);
+
+        console.log(sum);
+
+        const minus = ([num1, num2]) => {
+            return num1 - num2;
+        }
+
+        const minu = minus(arr);
+
+        console.log(minu);
+
+        const arr2 = [12, 14, 2, 5, 24];
+
+        const mul = ([num1, num2, ...rest]) => {
+            console.log(rest);
+
+            const num3 = rest.reduce((pri, cur) => pri * cur , 1);
+
+            return num1 * num2 * num3;
+        };
+
+        console.log(mul(arr2));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직접 선택자</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        //window.addEventListner('load', () => {}) == $(function() {}), $(document).ready(function() {})
+
+    $(function() {
+        //전체 선택자
+        //선택자.style.속성 == jquery선택자.css();
+        $("*").css("border", "1px solid black");
+
+        //아이디 선택자
+        $("#html").css("background", "skyblue");
+
+        //클래스 선택자
+        $(".js").css("backgroundColor", "orange");
+
+        //태그 선택자
+        $("li").css("color", "white");
+
+        //그룹 선택자
+        $("#html, .js").css("fontSize", "25px");
+    });
+    </script>
+</head>
+<body>
+    <ul>
+        <li id="html">HTML/CSS</li>
+        <li class="js">JavaScript</li>
+        <li class="js">Jquery</li>
+    </ul>
+</body>
+</html>

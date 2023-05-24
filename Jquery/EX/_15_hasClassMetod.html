@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasClass()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        let isRed = false;
+
+        const interval = setInterval(() => {
+            // isRed = !isRed;
+
+            // if(isRed) {
+            //     $(".box").addClass("red")
+            //              .removeClass("blue");
+
+            //     return;
+            // }
+
+            // $(".box").addClass("blue")
+            //          .removeClass("red");
+            if((!$(".box").hasClass("red") &&
+            !$(".box").hasClass("blue") &&
+            !$(".box").hasClass("green")) || $(".box").hasClass("green")) {
+                $(".box").addClass("red")
+                         .removeClass("blue")
+                         .removeClass("green");
+                return;
+            } 
+
+            if($(".box").hasClass("red")) {
+                $(".box").addClass("blue")
+                         .removeClass("red")
+                         .removeClass("green");
+
+                return;
+            } 
+            
+            if($(".box").hasClass("blue")){
+                $(".box").addClass("green")
+                         .removeClass("red")
+                         .removeClass("blue");
+
+                return;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

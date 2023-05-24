@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css()</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .box2 {
+            background-color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <p class="txt">a</p>
+    <script>
+        console.log($(".box").css("width"));
+        console.log($(".box").css("height"));
+        console.log($(".box").css("background-color"));
+
+        $(".box2").css("width", $(".box").css("width"));
+        $(".box2").css("height", $(".box").css("height"));
+        $(".box2").css("backgroundColor", $(".box").css("background-color"));
+        $(".txt").css("color", $(".box").css("background-color"));
+    </script>
+</body>
+</html>

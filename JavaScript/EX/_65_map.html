@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 고차함수-map</title>
+</head>
+<body>
+    <script>
+        const arr = [
+            {
+                id: 1,
+                name: '홍길동',
+                year: 2,
+                result: 3.2
+            },
+            {
+                id: 2,
+                name: '임꺽정',
+                year: 3,
+                result: 2.8
+            },
+            {
+                id: 3,
+                name: '장길산',
+                year: 1,
+                result: 1.7
+            },
+            {
+                id: 4,
+                name: '정도전',
+                year: 4,
+                result: 4.0
+            },
+        ];
+
+        //원본배열과 새로 만들어지는 배열의 길이가 무조건 같다.
+        const convertArr = arr.map(st => {
+            //불변성: 원본 데이터의 수정이 일어나지 않게 코드를 작성하는 것
+            const newSt = {...st};
+            console.log(newSt);
+            //4.0만점에서 4.5만점으로 환산
+            newSt.result *= 1.125;
+            return newSt;
+        });
+
+        //원본 배열은 변하지 않음
+        console.log(arr);
+        console.log(convertArr);
+    </script>
+</body>
+</html>

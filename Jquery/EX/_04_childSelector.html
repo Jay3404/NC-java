@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 선택자</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul class="grandTag">
+        <li>
+            HTML/CSS
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+        <li>
+            JavaScript
+            <ul>
+                <li>ES5</li>
+                <li class="child">ES6</li>
+            </ul>
+        </li>
+        <li>Jquery</li>
+    </ul>
+    <script>
+        //자식 태그 중 특정 태그만 선택하려면 매개변수로 태그를 선택
+        $(".grandTag").children("li").css("border", "1px solid red");
+
+        // $(".grandTag>li").css("color", "red");
+    </script>
+</body>
+</html>

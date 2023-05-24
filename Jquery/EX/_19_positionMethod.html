@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        console.log("변경 전");
+        console.log($(".box").position().left);
+        console.log($(".box").position().top);
+
+        const timeOut = setTimeout(() => {
+            //left, top, right, bottom 값 변경할 때는 css() 메소드 사용
+            $(".box").css("left", 50);
+            $(".box").css("top", "100px");
+
+            console.log("변경 후");
+            console.log($(".box").position().left);
+            console.log($(".box").position().top);
+        }, 1000);
+    </script>
+</body>
+</html>

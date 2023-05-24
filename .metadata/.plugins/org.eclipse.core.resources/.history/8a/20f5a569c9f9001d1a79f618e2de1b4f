@@ -1,0 +1,59 @@
+package chap99_etc;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class Main {
+    public static void main(String[] args) {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new InputStreamReader(System.in));
+
+            int[] array = new int[3];
+            String[] elements = reader.readLine().split(" ");
+
+            for (int i = 0; i < 3; i++) {
+                array[i] = Integer.parseInt(elements[i]);
+            }
+
+            int diff = 0;
+            int time = 0;
+            int max_height = 0;
+
+            for (int i = 0; i < array[0]; i++) {
+                String[] block1 = reader.readLine().split(" ");
+                for (int j = 0; j < array[1]; j++) {
+                    int height = Integer.parseInt(block1[j]);
+                    diff += array[2] - height;
+                    if (height > max_height) {
+                        max_height = height;
+                    }
+                }
+            }
+
+            if (diff > array[2]) {
+                time = 2 * (array[0] * array[1] - diff);
+                max_height--;
+            } else if (diff <= (array[0] * array[1] - diff) * 2) {
+                time = diff;
+            } else {
+                time = 2 * (array[0] * array[1] - diff);
+                max_height--;
+            }
+
+            System.out.println(time + " " + max_height);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

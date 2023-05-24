@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탐색 선택자</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul class="grandTag">
+        <li>
+            HTML/CSS
+            <ul class="html">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li class="third">DOM</li>
+                <li>BOM</li>
+                <li>W3C</li>
+            </ul>
+        </li>
+        <li>
+            JavaScript
+            <ul>
+                <li>ES5</li>
+                <li class="second">ES6</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Node</li>
+            </ul>
+        </li>
+        <li>Jquery</li>
+    </ul>
+    <script>
+        $(".html li").first().css("background", "lightgreen");
+
+        $(".html li").last().css("background", "lightblue");
+
+        $(".html li").eq(2).css("background", "lightgray");
+
+    </script>
+</body>
+</html>

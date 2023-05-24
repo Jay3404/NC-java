@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width()/height()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        console.log("변경전")
+        //px 키워드를 제외한 숫자타입의 값이 리턴된다.
+        console.log($(".box").width());
+        console.log($(".box").height());
+        console.log(typeof $(".box").width());
+        console.log(typeof $(".box").height());
+
+        const timeout = setTimeout(() => {
+            //매개변수를 숫자, 문자열인 수치, px이 붙은 수치로 설정해도 된다.
+            $(".box").width("200px")
+                     .height(200);
+            
+            console.log("변경 후");
+            console.log($(".box").width());
+            console.log($(".box").height());
+            console.log(typeof $(".box").width());
+            console.log(typeof $(".box").height());
+        }, 1000);
+    </script>
+</body>
+</html>

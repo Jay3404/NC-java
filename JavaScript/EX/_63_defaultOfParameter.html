@@ -16,15 +16,14 @@
         console.log(add(30));
 
         //단축평가를 이용한 파라미터 기본값 지정
-        const add1 = (a , b) => {
-            a = a || 10;
-            b = b || 20;
+        const add2 = (a, b) => {
+             a = a || 10;
+             b = b || 20;
 
-            return a + b;
+             return a + b;
         }
 
-        console.log(add1());
-
+        console.log(add2());
     </script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 선택자</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul class="grandTag">
+        <li>
+            HTML/CSS
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li class="third">DOM</li>
+                <li>BOM</li>
+                <li>W3C</li>
+            </ul>
+        </li>
+        <li>
+            JavaScript
+            <ul>
+                <li>ES5</li>
+                <li class="second">ES6</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Node</li>
+            </ul>
+        </li>
+        <li>Jquery</li>
+    </ul>
+    <script>
+        $(".third").prev().css("border", "1px solid red");
+        $(".third").next().css("border", "1px solid blue");
+
+        $(".second").siblings().css("background", "green");
+    </script>
+</body>
+</html>

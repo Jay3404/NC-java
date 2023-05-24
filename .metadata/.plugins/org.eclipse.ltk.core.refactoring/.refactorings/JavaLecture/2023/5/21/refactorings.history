@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chap99_etc.common&apos; to &apos;Main&apos;&#x0D;&#x0A;- Original project: &apos;JavaLecture&apos;&#x0D;&#x0A;- Original element: &apos;chap99_etc.common&apos;&#x0D;&#x0A;- Renamed element: &apos;chap99_etc.Main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;common&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chap99_etc{common.java[common" matchStrategy="1" name="Main" qualified="false" references="true" similarDeclarations="false" stamp="1684887382830" textual="false" version="1.0"/>
+</session>
