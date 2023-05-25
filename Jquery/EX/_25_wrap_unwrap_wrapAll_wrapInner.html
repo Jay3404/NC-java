@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap()/unwrap()/wrapAll()/wrapInner()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <p class="txt1">unwrap은 부모태그를 삭제합니다.</p>
+    </div>
+    <p class="txt1">wrap은 선택한 태그 각각에 부모태그를 생성합니다.</p>
+    <p class="txt1">wrap은 선택한 태그 각각에 부모태그를 생성합니다.</p>
+    <p class="txt1">wrap은 선택한 태그 각각에 부모태그를 생성합니다.</p>
+    <script>
+        //1. unwrap(): 부모 태그 삭제
+        //$(".txt1").unwrap();
+
+        //2. wrap("새 태그"): 지정된 태그로 선택된 태그 각각을 감쌈.
+        //$("body>p").wrap("<div/>");
+
+        //3. wrapAll("새 태그"): 지정된 태그로 선택된 태그를 모두 감쌈.
+        $("body>p").wrapAll("<div/>");
+
+        //4. wrapInner(): 선택한 태그의 하위태그들을 각각 부모로 감쌈
+        $("body").wrapInner("<main/>");
+    </script>
+</body>
+</html>

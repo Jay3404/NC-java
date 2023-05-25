@@ -1,0 +1,34 @@
+package Main;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Prob_18108 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader reader = null;
+        try {
+        	
+        	reader = new BufferedReader(new InputStreamReader(System.in));
+        	
+            int answer = reader.read();
+            
+            System.out.println(answer - 543);
+            
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+	}
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide()/show()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="hide" type="button">숨기기</button>
+    <button id="show" type="button">보이기</button>
+    <button id="toggle" type="button">토글</button>
+    <script>
+        $("#hide").on("click", () => {
+            //$(".box").hide();
+
+            $(".box").hide(1000, () => {
+                alert("숨김완료");
+            });
+        });
+
+        $("#show").on("click", () => {
+            //$(".box").show();
+
+            $(".box").show(1000, () => {
+                alert("표출완료");
+            });
+        });
+
+        $("#toggle").on("click", () => {
+            //박스 1초마다 숨김/표출 반복
+            /// 숨겨졌을 때는 숨김완료
+            /// 나타났을 때는 표출완료 alert 띄우기
+            $(".box").toggle(1000, () => {
+                if($(".box").css("display") === "none") {
+                    alert("숨김완료");
+                } else {
+                    alert("표출완료");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

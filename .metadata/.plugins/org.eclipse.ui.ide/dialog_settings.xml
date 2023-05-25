@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\BaekJoon_Prob"/>
 			<item value="D:\Lecture\Java\JavaLecture\src\chap98_homework\HW4_20230317"/>
 			<item value="D:\Lecture\Java\JavaLecture\src\chap07_inherit\car"/>
 			<item value="D:\Lecture\Java\JavaLecture\src\chap99_etc"/>
@@ -33,5 +34,7 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceWith()/replaceAll()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li id="li1">Java</li>
+        <li id="li2">C언어</li>
+        <li id="li3">C++</li>
+        <li id="li4">JavaScript</li>
+        <li id="li5">Jquery</li>
+    </ul>
+    <script>
+        $("#li2").replaceWith(`<li>Oracle</li>`);
+
+        $(`<li>Html/Css</li>`).replaceAll("#li3");
+    </script>
+</body>
+</html>

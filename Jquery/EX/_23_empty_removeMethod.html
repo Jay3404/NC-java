@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append()/appendTo()/prepend()/prependTo()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>게시글1</td>
+                <td>admin</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let htmlStr = `
+            <tr>
+                <td>2</td>
+                <td>게시글2</td>
+                <td>user1</td>
+            </tr>
+        `;
+
+        //1.append()
+        $("tbody").append(htmlStr);
+
+        htmlStr = `
+            <tr>
+                <td>3</td>
+                <td>게시글3</td>
+                <td>user2</td>
+            </tr>
+        `;
+
+        //2. appendTo()
+        $(htmlStr).appendTo("tbody");
+
+        htmlStr = `
+            <tr>
+                <td>0</td>
+                <td>인사말</td>
+                <td>admin</td>
+            </tr>
+        `;
+        
+        //3. prepend()
+        $("tbody").prepend(htmlStr);
+
+        htmlStr = `
+            <tr>
+                <td>0</td>
+                <td>공지사항</td>
+                <td>admin</td>
+            </tr>
+        `;
+
+        //4. prependTo()
+        $(htmlStr).prependTo("tbody");
+    </script>
+</body>
+</html>

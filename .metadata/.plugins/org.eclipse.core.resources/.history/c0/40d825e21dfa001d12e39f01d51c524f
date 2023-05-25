@@ -1,0 +1,20 @@
+package Main;
+
+import java.util.Scanner;
+
+public class Prob_10998 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String a = sc.next();
+		
+		String[] intArr = a.split(" ");
+		int num1 = Integer.parseInt(intArr[0]);
+		int num2 = Integer.parseInt(intArr[1]);
+		
+		System.out.println(num1 * num2);
+		
+	}
+
+}
