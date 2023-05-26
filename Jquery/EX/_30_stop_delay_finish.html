@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop()/delay()/finish()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        #box1 {
+            background-color: blue;
+        }
+
+        #box2 {
+            background-color: green;
+        }
+
+        #box3 {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <button id="btn1" type="button">중단</button>
+    <button id="btn2" type="button">종료</button>
+    <script>
+        $("#box1").delay(2000).animate({
+            width: "200px",
+            height: "200px"
+        }, 5000, () => {
+            console.log("확대완료");
+        });
+
+        //두 개이상의 animate메소드를 체이닝기법으로 붙일수 있고 순서대로 실행된다.
+        $("#box2").animate({
+            marginLeft: "500px"
+        }, 5000, () => {
+            console.log("투명도 0.4");
+        });
+        
+        //marginLeft로 box3을 250px 이동했다가 다시 100px로 돌아오도록 2000
+        $("#box3").animate({
+            marginLeft: "250px"
+        }, 3000)
+        .animate({
+            marginLeft: "100px"
+        }, 2000);
+
+        $("#btn1").on("click", () => {
+            $("#box2").stop();
+        });
+
+        $("#btn2").on("click", () => {
+            $("#box3").finish();
+        });
+    </script>
+</body>
+</html>

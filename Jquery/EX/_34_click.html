@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="btn1" type="button">왼쪽으로 이동</button>
+    <button id="btn2" type="button">오른쪽으로 이동</button>
+    <script>
+        //
+        $("#btn1").on("click", () => {
+            //왼쪽 300px 만큼 이동하는 애니메이션
+            $(".box").animate({
+                marginLeft: "300px"
+            }, 3000, () => {
+                $("#btn2").click()
+            });
+        });
+
+        $("#btn2").on("click", () => {
+            //왼쪽 300px 만큼 이동하는 애니메이션
+            $(".box").animate({
+                marginLeft: "0px"
+            }, 3000, () => {
+                $("#btn1").click()
+            });
+        });
+    </script>
+</body>
+</html>

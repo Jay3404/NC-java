@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적 태그의 이벤트 할당</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+        let cnt = 0;
+        
+        // $("#btn").click(() => {
+        //     $("#txt").text(`${++cnt}회 클릭`);
+        // });
+
+        $(document).on("click", "#btn", () => {
+            $("#txt").text(`${++cnt}회 클릭`);
+        });
+
+        //원래 존재하지 않던 태그를 생성하는 것을 동적태그 생성이라고 하고 생성된 태그를 동적 태그라고 한다.
+        let htmlStr = `
+            <button type="button" id="btn">클릭</button>
+        `;
+
+        $("#txt").after(htmlStr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ready()/load</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ssl.pstatic.net/melona/libs/1446/1446894/4c3e0fc0a6e1fc66ea1d_20230524165850867.jpg" alt="네이버 광고">
+    </div>
+    <script>
+        //DOM 객체(body안의 태그들)이 항상 먼저 불러와진 후에
+        //링크로 연결된 파일들을 불러온다.
+        //하지만 이미지 같은 정적파일들은 브라우저에서 일정 기간동안 캐시메모리에 저장하고 있기 때문에 두 번째 접속부터는 캐시메모리에서 이미지를 꺼내오기 때문에 이미지가 더 빨리 로드된다.
+        //브라우저의 캐시메모리를 삭제하고 다시 진행해보면 항상 DOM 객체(태그들)로드(ready 메소드)가 먼저 완료되는 것을 확인할 수 있다.
+        $("img").on("load", () => {
+            const htmlStr = `
+                <p style="color: red;">로딩완료</p>
+            `;
+
+            $(".container").append(htmlStr);
+        });
+
+        $(document).ready(() => {
+            const htmlStr = `
+                <p style="color: blue;">레디완료</p>
+            `;
+
+            $(".container").append(htmlStr);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+package _03_loop;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Prob_15552 {
+    public static void main(String[] args) {
+        try {
+            // BufferedReader로 사용자의 입력값 받기
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("입력값을 입력하세요:");
+            int input = reader.read();
+            String[] strArr = new String[input * 2];
+            String str = "";
+            
+            System.out.println(input);
+            for(int i = 0; i < input; i++) {
+            	str += reader.readLine();
+            }
+
+            // BufferedWriter로 출력하기
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+            writer.write("입력값: " + str);
+
+            // BufferedWriter를 비우고 닫기
+            writer.flush();
+            writer.close();
+            
+            // BufferedReader 닫기
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

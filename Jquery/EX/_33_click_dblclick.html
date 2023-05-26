@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click/dblclick</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button type="button" id="btn">클릭</button>
+    <script>
+        const colorArr = ['red', 'blue', 'green', 'yellow', 'black'];
+
+        let index = 0;
+
+        $("#btn").on("click", () => {
+            $(".box").css("backgroundColor", colorArr[index++]);
+
+            if(index === 5)
+                index = 0;
+        });
+
+        //강제 이벤트 발생
+        const interval = setInterval(() => {
+            $("#btn").click();
+        }, 1000);
+    </script>
+</body>
+</html>

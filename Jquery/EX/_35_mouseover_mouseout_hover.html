@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover/mouseout/hover</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        .box {
+             width: 100px;
+             height: 100px;
+             margin: 10px;
+        }
+
+        #box1 {
+            background-color: blue;
+        }
+
+        #box2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <script>
+        $("#box1").on("mouseover", () => {
+            $("#box1").css("backgroundColor", "red");
+        });
+
+        $("#box1").on("mouseout", () => {
+            $("#box1").css("backgroundColor", "blue");
+        });
+
+        $("#box2").hover(
+            //마우스 오버일 때
+            () => {
+                $("#box2").css("backgroundColor", "yellow");
+            }, 
+            //마우스 아웃일 때
+            () => {
+                $("#box2").css("backgroundColor", "green");
+            }
+        );
+    </script>
+</body>
+</html>

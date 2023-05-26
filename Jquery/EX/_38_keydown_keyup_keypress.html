@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keydown()/keyup()/keypress()</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div>
+        <label>
+            <input type="text" id="input1">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="text" id="input2">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="text" id="input3">
+        </label>
+    </div>
+    <script>
+        $("#input1").on("keydown", (e) => {
+            console.log(`keydown =====> ${e.keyCode}`);
+        });
+
+        $("#input2").on("keypress", (e) => {
+            console.log(`keypress =====> ${e.keyCode}`);
+        });
+    </script>
+</body>
+</html>

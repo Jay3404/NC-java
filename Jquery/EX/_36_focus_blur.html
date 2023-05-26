@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus/blur</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label>아이디
+                <input type="text" id="userId" name="userId">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호
+                <input type="password" id="userPw" name="userPw">
+            </label>
+        </div>
+        <div>
+            <label>비밀번호 확인
+                <input type="password" id="userPwChk" name="userPwChk">
+            </label>
+        </div>
+    </form>
+    <script>
+        //userId 인풋에 포커스를 바로 생성하여 즉시 입력할 수 있는 상태로 만듬
+        $("#userId").focus();
+
+        //userId focus이벤트 매핑
+        $("#userId").on("focus", () => {
+            $("#userId").val("");
+        });
+
+        //userId blur이벤트 매핑
+        $("#userId").on("blur", () => {
+            if($("#userId").val().length < 8) {
+                alert("아이디는 8자 이상으로 입력하세요.");
+                $("#userId").focus();
+            }
+        }   );
+    </script>
+</body>
+</html>
